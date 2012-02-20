@@ -1,20 +1,19 @@
 # Assembly Tools
-#### What you will need to assemble your Jaguar Revision A.3 PCB
+#### What you will need to assemble your Jaguar Revision A3 PCB
 
-There are two methods for assembly, one is with a soldering iron, the other requires a reflow oven. A reflow oven can be easily made from cheap benchtop toaster ovens. **NEVER EVER** use a oven that is used for cooking food! **TOXIC FUMES** are given off during the reflow process and they will **CONTAMINATE ANY FOOD** prepared in them. 
-
+There are two methods for SMD assembly, one is with a soldering iron, the other requires a reflow oven. A reflow oven can be easily made from cheap counter top toaster ovens. **NEVER EVER** use a oven that is used for cooking food! **TOXIC FUMES** are given off during the reflow process and they will **CONTAMINATE ANY FOOD** prepared in them. 
 
 - **Common tool requirements** :
 
 	- Temperature controlled soldering iron (fine tip) for PCB work
 	- An ordinary 35 Watt soldering iron for soldering wires
-	- Side cutters
+	- Side cutters (preferrably flush cut)
 	- Long nose pliers
 	- Tweezers (pointy type)	
 	- Fine gauge solder 0.5mm for surface mount applications
 	- Solder wick
 	- Anti-static work surface (other substitutes are aluminium foil, anti static component bags)
-	- Multimeter and/or oscilloscope, or any other appropriate voltage and current testing device.
+	- Digitial Multimeter (DMM) and/or oscilloscope, or any other appropriate voltage and current testing device.
 	- Saleae Logic or Logic16 logic analyzer for testing with the BenchTest firmware.
 	- Bench power supply or 12V battery.
 	

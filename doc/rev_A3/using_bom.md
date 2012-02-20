@@ -1,14 +1,12 @@
 # Bill of Materials
 
-The BOM is broken down by component type and for those components that have multiple values you, as the end user, can pick and choose which components are best suited to your project. For each sub-circuit there is a matching assembly section.
-
-Completing all of these steps are compulsory to achieve a functional 'FreeEMS microcontroller'. 
+The Bill of Materials (**BOM**) is broken down by component type and for those components that have multiple values you, as the end user, can pick and choose which components are best suited to your project. For each sub-circuit there is a matching assembly section.
 
 Open the BOM, it is found in the **docs** directory and is called **Jaguar.ods**.
 
 ### Overview with Important notes
 
-- Only install one USB connector (either the USB-B **or** USB-B-mini but **NOT** both).
+- Only order and install one USB connector (either the USB-B **or** USB-B-mini but **NOT** both).
 
 #### Legend of acronyms ####
 Some of these acronyms are used in the schematic documentation.
@@ -24,6 +22,9 @@ Some of these acronyms are used in the schematic documentation.
 
 - **DIS**: *(**D**istributorless **I**gnition **S**ystem)*
 	- A method of wasted spark ignition implemented on General Motors vehicles.
+
+- **DMM**: *(**D**igital **M**ulti**m**eter)*
+	- Used for testing amperage, resistance and voltage.
 
 - **GND**: *(**G**ro**nd**)*
 

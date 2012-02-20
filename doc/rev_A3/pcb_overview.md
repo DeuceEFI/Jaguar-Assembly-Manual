@@ -14,8 +14,8 @@
 
 ## PCB layout
 
-/-- 337x260 img/placeholder_image.png "" Actual top side of the Jaguar Revision A.3 PCB.
+/-- 337x260 img/placeholder_image.png "" Actual top side of the Jaguar Revision A3 PCB.
 --/
-/-- 337x260 img/placeholder_image.png "" Actual bottom side of the Jaguar Revision A.3 PCB.
+/-- 337x260 img/placeholder_image.png "" Actual bottom side of the Jaguar Revision A3 PCB.
 --/
 
