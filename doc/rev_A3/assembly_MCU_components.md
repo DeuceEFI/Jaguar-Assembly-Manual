@@ -49,6 +49,8 @@ These are the necessary components for the USB to MCU communications to function
 - **R57**	*(470 ohm)*
 - **R58**	*(470 ohm)*
 - **R79**	*(22 ohm or Ferrite Bead)*
+- Install a jumper wire from **RX** (one of the R60 pads) to **RXB** (near C21)
+- Install a jumper wire from **TX** (near R60) to **TXB** (near C40)
 
 --/ 
 #### USB UART Optional Components Installation
