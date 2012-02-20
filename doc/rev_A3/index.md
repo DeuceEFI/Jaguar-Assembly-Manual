@@ -15,4 +15,7 @@
   * [Loading Firmware](#firmware_upload)
   * [Testing Inputs](#testing_inputs)
   * [Testing Outputs](#testing_outputs)
-  * [Installation](#installation_overview)
+  * [Installation Overview](#installation_overview)
+  * [Installation Inputs](#installation_inputs)
+  * [Installation Outputs](#installation_outputs)
+  * [Installation Injectors](#installation_injectors)
