@@ -1,14 +1,8 @@
 # Baking the Assembled PCB
 
 *BAKING DETAILS*
-/-- 337x260 img/placeholder_image.png "" Before bake --/
-/-- 337x260 img/placeholder_image.png "" Into the oven we go! --/
-/-- 337x260 img/placeholder_image.png "" At 200&deg; the reflow process has begun peaking around 230&deg; --/
-/-- 337x260 img/placeholder_image.png "" Time to cool down. 
-
-- Left : Partial assembled PCB with on-board sensors and USB connector removed for mini-USB mod.
-- Center : Blank PCB (I forgot to bring the MCU and FTDI chip along with me, so those are missing, will be put on soon).
-- Right : Partial assembled PCB with setup for off-board (OEM) sensors.
+- Place the completed board(s) in your reflow soldering oven and start the reflow cycle.
+- Once the cycle is complete and the board(s) have cooled, remove them from the reflow oven for inspection.
 --/
 
 #### AFTER BAKING INSPECTION

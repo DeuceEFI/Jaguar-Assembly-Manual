@@ -1,4 +1,4 @@
-[Jaguar]: http://jaguar.freeems.org/
+[Jaguar]: http://forum.diyefi.org/viewforum.php?f=67
 [FreeEMS.org]: http://freeems.org/
 [DIYEFI]: http://diyefi.org/
 [KiCad]: http://kicad.sourceforge.net/wiki/Main_Page

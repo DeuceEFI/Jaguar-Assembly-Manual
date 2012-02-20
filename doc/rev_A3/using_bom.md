@@ -1,7 +1,8 @@
 # Bill of Materials
 
 The BOM is broken down by component type and for those components that have multiple values you, as the end user, can pick and choose which components are best suited to your project. For each sub-circuit there is a matching assembly section.
-The primary components are compulsory to achieve a functional 'FreeEMS microcontroller'. All other sections are optional, however, a combination of these will be necessary for an engine to run.
+
+Completing all of these steps are compulsory to achieve a functional 'FreeEMS microcontroller'. 
 
 Open the BOM, it is found in the **docs** directory and is called **Jaguar.ods**.
 
@@ -9,13 +10,11 @@ Open the BOM, it is found in the **docs** directory and is called **Jaguar.ods**
 
 - Only install one USB connector (either the USB-B **or** USB-B-mini but **NOT** both).
 
-
 #### Legend of acronyms ####
-Some or all of these acronyms are used in the schematic documentation.
+Some of these acronyms are used in the schematic documentation.
 
 - **AAP**: *(**A**tmospheric **A**bsloute **P**ressure)* 
-  	- Used for normalisation of the MAP vs atmospheric pressure, this is considered optional. Choose this if you live in a mountainous area, or intend to visit such areas using your vehicle.
-
+  	- Used for normalisation of the MAP vs atmospheric pressure, this is considered optional. Choose this if you live in a mountainous area, or intend to visit such areas using your vehicle.  Currently this is not supported on the Jaguar Revision A3 board, but may have a pad to connect the supporting circuitry to in a future revision.
 
 - **BDM**: *(**B**ackground **D**ebug **M**odule)*
 	- Used to program the Serial Monitor and for additional troubleshooting.
