@@ -1,4 +1,4 @@
-title: Jaguar Revision A.2 for FreeEMS Assembly Manual
+title: Jaguar Revision A3 for FreeEMS Assembly Manual
 header:
   - links
   - prev_next
@@ -48,4 +48,4 @@ structure:
   - testing_outputs:
     - testing_outputs
   - installation:
-    - installation # how to install your Jaguar Revision A.3 PCB
+    - installation # how to install your Jaguar Revision A3 PCB

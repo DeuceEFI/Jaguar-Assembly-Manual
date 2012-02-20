@@ -49,8 +49,8 @@ These are the necessary components for the USB to MCU communications to function
 - **R57**	*(470 ohm)*
 - **R58**	*(470 ohm)*
 - **R79**	*(22 ohm or Ferrite Bead)*
-- Install a jumper wire from **RX** (one of the R60 pads) to **RXB** (near C21).  This bypasses the non-functional opto-isolator circuit.
-- Install a jumper wire from **TX** (near R60) to **TXB** (near C40).  This bypasses the non-functional opto-isolator circuit.
+- Install a jumper wire from **RX** (one of the R60 pads) to **RXB** (near C21).  This bypasses the optocoupler circuit.
+- Install a jumper wire from **TX** (near R60) to **TXB** (near C40).  This bypasses the optocoupler circuit.
 
 --/ 
 #### USB UART Optional Components Installation
@@ -60,14 +60,13 @@ The following have positions on the PCB, but not required for operation (they ar
 **Step 13 :**
 /-- 337x260 img/placeholder_image.png "" Optional USB circuit components. 
 
+- **R55**	*(2.4k ohm)*	Pull up for RESET pin.
+- **R56**	*(1k - 2.4k ohm)*	Optional for RX Optocoupler
+- **R60**	*(10k ohm)*	Optional for RX Optocoupler
+- **R59**	*(10k ohm)*	Optional for TX Optocoupler
+- **R61**	*(1k - 2.4k ohm)*	Optional for TX Optocoupler
+- **U8**	*(Optocoupler)*
+- **U9**	*(Optocoupler)*
 
-- **R55**	*(2.4k ohm)* Pull up for RESET pin.
-- **R56**	*(2.4k ohm)* Optional for the Opto-Isolators
-- **R60**	*(10k ohm)* Optional for the Opto-Isolators
-- **R59**	*(10k ohm)* Optional for the Opto-Isolators
-- **R61**	*(2.4k ohm)* Optional for the Opto-Isolators
-- **U8**	*(Opto Isolator)*
-- **U9**	*(Opto Isolator)*
-
-**NOTE: These are OPTIONAL as the Opto Isolators were proven not to be fast enough during Jaguar prototype testing.**
+**NOTE: The optocouplers and their supporting resistors are OPTIONAL if the end user would like to use an inverter to power their PC while tuning.**
 --/ 
