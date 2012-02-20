@@ -1,6 +1,6 @@
 ## Power Supplies
 
-Orient the Jaguar Revision A.3 board so that the U6 (MPX4100AP) is located to the right side and U3 will be in the lower left side.
+Orient the Jaguar Revision A3 board so that the U6 (MPX4100AP) silk screen is located to the right side and U3 will be in the lower left side.  You should not see any of the SMD components, they should be on the back side of the board.  For the remainder of the assembly manual this will be how the Jaguar board should be oriented to install the through hole components.
 
 #### Install MCU Power Supply components
 **Step 7 :** 
