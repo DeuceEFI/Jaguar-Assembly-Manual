@@ -1,0 +1,51 @@
+title: Jaguar Revision A.2 for FreeEMS Assembly Manual
+header:
+  - links
+  - prev_next
+footer:
+  - prev_next
+  - footer
+structure:
+  - index:
+    - intro # introductionary chapter
+    - index # index (not used yet)
+    - pcb_overview # overview of the board
+  - materials:
+    - using_bom # BOM configuration chapter
+    - sourcing_components # chapter guiding how to order components
+  - general_info:  
+    - assembly_tools 
+  - assembly_SMD: 
+    - assembly_overview # assembly introduction chapter
+    - assembly_primary
+  - reflow:
+    - pcb_bake # instructions how to bake the board in an oven
+  - assembly_PowerSupplies:
+    - assembly_PS # instructions to assemble the power supplies
+  - assembly_MCU_components:
+    - assembly_MCU_components # instructions to assemble MCU supporting components
+  - serial_monitor:
+    - sm_install # how to load the serial monitor using BDM
+  - assembly_TH_Inputs:
+    - assembly_brv
+    - assembly_map
+    - assembly_rpm
+    - assembly_cht
+    - assembly_mat
+    - assembly_iat
+    - assembly_o2
+    - assembly_tps
+  - assembly_TH_Outputs:
+    - assembly_ignition
+    - assembly_fuel
+    - assembly_injection
+  - assembly_pin_strips:
+    - assembly_pinstrips
+  - firmware:
+    - firmware_upload # how to upload the FreeEMS firmware to the board
+  - testing_inputs:
+    - testing_inputs
+  - testing_outputs:
+    - testing_outputs
+  - installation:
+    - installation # how to install your Jaguar Revision A.3 PCB

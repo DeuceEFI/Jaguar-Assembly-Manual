@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaguar Revision A.2 for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_MCU_components.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_TH_Inputs.html">Next &gt;&gt;</a> </p>
+
+<p><hr id="sm_install"></p>
+
+<h1>Installing the Serial Monitor (SM)</h1>
+
+<p><em>In the following sections it is assumed that you just completed the last task which completes the assembly of the Jaguar Revision A.3 board.</em></p>
+
+<h2>Installing the serial monitor</h2>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/usbdm.jpg"><img src="img/usbdm.jpg" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>Using BDM pod and installing the FreeEMS loader
+- Connect a BDM pod to the BDM header on your Jaguar board.
+- Power up the Jaguar board.
+- Upload the <a href="https://github.com/fredcooke/freeems-vanilla/raw/master/lib/freeems.serial.monitor.s19">serial monitor firmware</a> using the appropriate software for your BDM pod
+- One option is to use CodeWarrior as &quot;the appropriate software&quot;:
+ - Install <a href="http://www.freescale.com/">CodeWarrior</a> or other software able to program an S12 MCU via BDM.
+ - Upload the serial monitor: in CodeWarrior, debug-&gt;File-&gt;Load.
+- If possible, use the same program to verify that your load was successful.</p>
+</div>
+</div></p>
+
+<p><em>The Serial Monitor should now be installed on your Jaguar board.</em></p>
+
+<h2>Verifying correct operation of the Serial Monitor</h2>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>Jumpering the load/run header for SM testing </p>
+</div>
+</div></p>
+
+<ul>
+<li>If the BDM is still connected, disconnect it now.</li>
+<li>Jumper the load/run header and reset power to the board.</li>
+<li>Connect a USB cable between your computer and the Jaguar board.</li>
+<li>Using <a href="http://cutecom.sourceforge.net/">CuteCom</a>,
+send various <a href="http://www.freescale.com/files/microcontrollers/doc/app_note/AN2548.pdf">Serial Monitor</a> packets and verify that it responds correctly.</li>
+</ul>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_MCU_components.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_TH_Inputs.html">Next &gt;&gt;</a> </p></body>
+</html>

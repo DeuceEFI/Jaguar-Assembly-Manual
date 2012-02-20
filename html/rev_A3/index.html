@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaguar Revision A.2 for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><span class="prev_page_link">&lt;&lt; Previous</span> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="materials.html">Next &gt;&gt;</a> </p>
+
+<p><hr id="intro"></p>
+
+<h1>Introduction</h1>
+
+<h5>First of all I would like to thank Fred Cooke for his contribution to the firmware that this EMS uses. &nbsp; Second, I would like to thank Preston Saunders who originally created the Puma-HowTo documentation of which this work is directly based on. &nbsp; Third, I would like to thank all of the diyefi.org members who have reviewed my schematics and PCB design to make the Jaguar PCB a truly world class EMS platform!</h5>
+
+<p>This guide will show you how to choose the components, how to order the components, how to build your Jaguar Revision A.3 board and how to properly connect it to a vehicle.</p>
+
+<p>It is assumed that you came to this guide from one of the main sites, if not, see the main <a href="http://freeems.org/">FreeEMS.org</a> site for general information, and the <a href="http://jaguar.freeems.org/">Jaguar</a> site for more specific information on this design.</p>
+
+<p>This version of the manual includes instructions for the <strong>Revision A.3 board</strong>, which was produced as a small one-off run of just 4 bare PCBs by Andy Goss. You will need to purchase parts required for your build, these are listed in <a href="materials.html#using_bom">the BOM</a>, perform <a href="#assembly_essential_mods">PCB corrections</a> then install those parts. You will also need to program the Serial Monitor via the BDM programming port to get a functional boot loader installed. After the Serial Monitor is flashed with the BDM the board can be programmed via a USB connection to your computer.</p>
+
+<p>Click on all images to view them full size.</p>
+
+<p><hr id="index"></p>
+
+<h2>Index</h2>
+
+<ul>
+<li><a href="index.html#pcb_overview">PCB Overview</a></li>
+<li><a href="materials.html#using_bom">Using the BOM</a></li>
+<li><a href="materials.html#sourcing_components">Sourcing the components</a></li>
+<li><a href="general_info.html#assembly_tools">Assembly Tools</a></li>
+<li><a href="assembly_SMD.html#assembly_overview">Assembling the PCB - SMD</a></li>
+<li><a href="reflow.html#pcb_bake">Baking the Assembled PCB</a></li>
+<li><a href="assembly_PowerSupplies.html#assembly_PS">Assembling the PCB - Power Supplies</a></li>
+<li><a href="assembly_MCU_components.html#assembly_MCU_components">Assembling the PCB - MCU/USB Components</a></li>
+<li><a href="serial_monitor.html#sm_install">Installing the Serial Monitor</a></li>
+<li><a href="assembly_TH_Inputs.html#assembly_brv">Assembling the PCB - Analog Inputs</a></li>
+<li><a href="assembly_TH_Outputs.html#assembly_ignition">Assembling the PCB - Outputs</a></li>
+<li><a href="assembly_pin_strips.html#assembly_pinstrips">Assembling the PCB - Optional Pin Strips</a></li>
+<li><a href="firmware.html#firmware_upload">Loading Firmware</a></li>
+<li><a href="testing_inputs.html#testing_inputs">Testing Inputs</a></li>
+<li><a href="testing_outputs.html#testing_outputs">Testing Outputs</a></li>
+<li><a href="installation.html#installation">Installation</a></li>
+</ul>
+
+<p><hr id="pcb_overview"></p>
+
+<h2>PCB overview</h2>
+
+<div class=imagebox style="min-height:285px">
+<a class=pict href="img/pcb_top.png"><img src="img/pcb_top.png" width=440 height=265 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>This is the top side (SMD side) view of the PCB. The top-side traces are visible in RED, pads are GOLD.</p>
+</div>
+</div></p>
+
+<div class=imagebox style="min-height:284px">
+<a class=pict href="img/pcb_bottom.png"><img src="img/pcb_bottom.png" width=440 height=264 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>This is the bottom side (Thru Hole side) view of the PCB. The bottom-side traces are visible as GREEN lines. The mass of green is the ground plain. GOLD pads linked to the top side.</p>
+</div>
+</div></p>
+
+<div class=imagebox style="min-height:285px">
+<a class=pict href="img/pcb_SMD_components.png"><img src="img/pcb_SMD_components.png" width=440 height=265 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>This image is the silk screen layer over top of the top side (SMD side) of the PCB, the outlines are component mounting locations.</p>
+</div>
+</div></p>
+
+<div class=imagebox style="min-height:285px">
+<a class=pict href="img/pcb_TH_components.png"><img src="img/pcb_TH_components.png" width=440 height=265 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>This image is the silk screen layer over top of the bottom side (Thru Hole side) of the PCB, the outlines are component mounting locations.</p>
+</div>
+</div></p>
+
+<h2>PCB layout</h2>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>Actual top side of the Jaguar Revision A.3 PCB.</p>
+</div>
+</div></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>Actual bottom side of the Jaguar Revision A.3 PCB.</p>
+</div>
+</div></p>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><span class="prev_page_link">&lt;&lt; Previous</span> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="materials.html">Next &gt;&gt;</a> </p></body>
+</html>

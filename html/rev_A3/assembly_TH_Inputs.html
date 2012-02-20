@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaguar Revision A.2 for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="serial_monitor.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_TH_Outputs.html">Next &gt;&gt;</a> </p>
+
+<p><hr id="assembly_brv"></p>
+
+<h4>BRV Circuit</h4>
+
+<p><strong>Step 14 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>Install BRV circuit components.</p></p>
+
+<ul>
+<li><strong>R28</strong> <em>(470 ohm)</em></li>
+<li><strong>R29</strong> <em>(3.9k ohm)</em></li>
+<li><strong>R30</strong> <em>(1k ohm)</em></li>
+<li><strong>C27</strong> <em>(0.22µF)</em></li>
+<li><strong>C32</strong> <em>(0.1µF)</em></li>
+<li><strong>D6</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the right side of the PCB.</li>
+<li><strong>D7</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the left side of the PCB.</li>
+</ul>
+
+<p></div>
+</div></p>
+
+<p><hr id="assembly_map"></p>
+
+<h4>MAP circuit</h4>
+
+<p><strong>Step 15 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>Install MAP components</p></p>
+
+<ul>
+<li><strong>C20</strong> <em>(0.22µF)</em></li>
+<li><strong>C21</strong> <em>(0.33µF)</em></li>
+<li><strong>C22</strong> <em>(0.22µF)</em></li>
+<li><strong>C23</strong> <em>(0.01µF)</em></li>
+<li><strong>R13</strong> <em>(1k ohm)</em></li>
+<li><strong>U6</strong> <em>(MPX4100AP)</em> for normally aspirated version, if for boosted application use MPX4250AP instead.</li>
+</ul>
+
+<p></div>
+</div></p>
+
+<p><hr id="assembly_rpm"></p>
+
+<h4>RPM/Position Inputs</h4>
+
+<p><strong>Step 16 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>Install common RPM input components. <br>
+<em>Only perform either the Hall/Opto/Digital</em> <strong>OR</strong> <em>the VR Input Sections but not both.</em></p></p>
+
+<ul>
+<li><strong>Install Common RPM Components</strong>
+
+<ul>
+<li><strong>C24</strong> <em>(1nF)</em></li>
+<li><strong>C25</strong> <em>(1nF)</em></li>
+<li><strong>C26</strong> <em>(0.1µF)</em></li>
+<li><strong>C42</strong> <em>(10nF)</em></li>
+<li><strong>C43</strong> <em>(1µF)</em></li>
+<li><strong>R11</strong> <em>(10k ohm)</em></li>
+<li><strong>R12</strong> <em>(10k ohm)</em></li>
+<li><strong>R16</strong> <em>(10k ohm)</em></li>
+<li><strong>R17</strong> <em>(10k ohm)</em></li>
+<li><strong>R18</strong> <em>(10k ohm)</em></li>
+<li><strong>R19</strong> <em>(10k ohm)</em></li>
+<li><strong>R9</strong> <em>(2.4k ohm)</em> This is optional for diagnostics.</li>
+<li><strong>D4</strong> <em>(Green LED)</em> This is optional for diagnostics.</li>
+</ul></li>
+</ul>
+
+<p><strong>Step 17 :</strong>
+- *<em>TACH - Hall/Opto/Digital RPM Input *</em><br>
+<strong>Install :</strong>
+ - <strong>R22</strong> <em>(1k ohm)</em> </p>
+
+<ul>
+<li>*<em>TACH - VR Input *</em><br>
+<strong>Install :</strong>
+
+<ul>
+<li><strong>R23</strong> <em>(5k ohm)</em></li>
+</ul></li>
+</ul>
+
+<p></div>
+</div></p>
+
+<p><strong>Step 18 :</strong>
+- *<em>CAM - Hall/Opto/Digital RPM Input *</em><br>
+<strong>Install :</strong>
+ - <strong>R22</strong> <em>(1k ohm)</em> </p>
+
+<ul>
+<li>*<em>CAM - VR Input *</em><br>
+<strong>Install :</strong>
+
+<ul>
+<li><strong>R23</strong> <em>(5k ohm)</em>
+--/</li>
+</ul></li>
+</ul>
+
+<p><hr id="assembly_cht"></p>
+
+<h4>CHT circuit</h4>
+
+<p><strong>Step 19 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>CHT circuit components.</p></p>
+
+<ul>
+<li><strong>C33</strong> <em>(0.1µF)</em></li>
+<li><strong>C36</strong> <em>(1µF)</em></li>
+<li><strong>R31</strong> <em>(2.49k ohm)</em></li>
+<li><strong>R32</strong> <em>(470 ohm)</em></li>
+<li><strong>D12</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom side of the PCB.</li>
+<li><strong>D13</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the right side of the PCB.</li>
+<li><strong>JP6</strong> This is just a wire jumper.</li>
+</ul>
+
+<p></div>
+</div></p>
+
+<p><hr id="assembly_mat"></p>
+
+<h4>MAT circuit</h4>
+
+<p><strong>Step 20 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>MAT circuit components. </p></p>
+
+<ul>
+<li><strong>C28</strong> <em>(0.1µF)</em></li>
+<li><strong>C30</strong> <em>(1µF)</em></li>
+<li><strong>R24</strong> <em>(2.49k ohm)</em></li>
+<li><strong>R26</strong> <em>(470 ohm)</em></li>
+<li><strong>D8</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom side of the PCB.</li>
+<li><strong>D9</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the top side of the PCB.</li>
+</ul>
+
+<p></div>
+</div></p>
+
+<p><hr id="assembly_iat"></p>
+
+<h4>IAT circuit</h4>
+
+<p><strong>Step 21 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>IAT circuit components. </p></p>
+
+<ul>
+<li><strong>C29</strong> <em>(0.1µF)</em></li>
+<li><strong>C31</strong> <em>(1µF)</em></li>
+<li><strong>R25</strong> <em>(2.49k ohm)</em></li>
+<li><strong>R27</strong> <em>(470 ohm)</em></li>
+<li><strong>D10</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom side of the PCB.</li>
+<li><strong>D11</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom side of the PCB.</li>
+<li><strong>JP5</strong> This is just a wire jumper.</li>
+</ul>
+
+<p></div>
+</div></p>
+
+<p><hr id="assembly_o2"></p>
+
+<h4>O2 circuit</h4>
+
+<p><strong>Step 22 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>Exhaust O2 circuit components.</p></p>
+
+<ul>
+<li><strong>C34</strong> <em>(0.1µF)</em></li>
+<li><strong>C38</strong> <em>(0.22µF)</em></li>
+<li><strong>R33</strong> <em>(470 ohm)</em></li>
+<li><strong>D16</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the left side of the PCB.</li>
+<li><strong>D17</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the left side of the PCB.</li>
+</ul>
+
+<p></div>
+</div></p>
+
+<p><hr id="assembly_tps"></p>
+
+<h4>TPS circuit</h4>
+
+<p><strong>Step 23 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>TPS circuit components. </p></p>
+
+<ul>
+<li><strong>C35</strong> <em>(0.1µF)</em></li>
+<li><strong>C37</strong> <em>(0.22µF)</em></li>
+<li><strong>R34</strong> <em>(470 ohm)</em></li>
+<li><strong>D14</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the top side of the PCB.</li>
+<li><strong>D15</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom side of the PCB.</li>
+</ul>
+
+<p></div>
+</div></p>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="serial_monitor.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_TH_Outputs.html">Next &gt;&gt;</a> </p></body>
+</html>

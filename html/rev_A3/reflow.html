@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaguar Revision A.2 for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_SMD.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_PowerSupplies.html">Next &gt;&gt;</a> </p>
+
+<p><hr id="pcb_bake"></p>
+
+<h1>Baking the Assembled PCB</h1>
+
+<p><em>BAKING DETAILS</em></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>Before bake </p>
+</div>
+</div></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>Into the oven we go! </p>
+</div>
+</div></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>At 200&deg; the reflow process has begun peaking around 230&deg; </p>
+</div>
+</div></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/placeholder_image.png"><img src="img/placeholder_image.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a>
+&lt;div class=text&gt;<p>Time to cool down. </p></p>
+
+<ul>
+<li>Left : Partial assembled PCB with on-board sensors and USB connector removed for mini-USB mod.</li>
+<li>Center : Blank PCB (I forgot to bring the MCU and FTDI chip along with me, so those are missing, will be put on soon).</li>
+<li>Right : Partial assembled PCB with setup for off-board (OEM) sensors.</li>
+</ul>
+
+<p></div>
+</div></p>
+
+<h4>AFTER BAKING INSPECTION</h4>
+
+<ul>
+<li>Check the entire PCB for Solder bridges, especially on <strong>MCU (U1), R62, U7, U4 and all the Qs</strong></li>
+<li>Examine the new solder joints for dryness, this is normally depicted by dull looking solder, it all should be rather shinny.</li>
+<li>Clear any solder beads that may have formed on the PCB, this can easily be performed by using a tooth brush and giving the PCB a quick and careful scrub.</li>
+</ul>
+
+<h4>AFTER BAKING TESTING</h4>
+
+<p><strong>Testing MCU for solder bridges</strong></p>
+
+<ul>
+<li>Set your DMM for measuring resistance 200 ohm range should be OK;
+
+<ul>
+<li>Check from one MCU (U1) pin to the next to make sure they are not shorted together.
+
+<ul>
+<li>There is one exception, only MCU (U1) pins 85 and 86 should show shorted.</li>
+</ul></li>
+<li>Check from one USB UART (U7) pin to the next to make sure they are not shorted together.
+
+<ul>
+<li>There is one exception, only USB UART (U7) pins 25 and 26 should show shorted.</li>
+</ul></li>
+<li>Check from one MAX9926 (U4) pin to the next to make sure they are not shorted together.
+
+<ul>
+<li>There is no exception.</li>
+</ul></li>
+<li>Check from one VNN7NV0413TR (Q9-11) pin to the others to make sure they are not shorted together.
+
+<ul>
+<li>Also make sure that no pin is shorted to ground.</li>
+</ul></li>
+<li>Check from one VND7NV04 (Q1-8) pin to the others to make sure they are not shorted together.
+
+<ul>
+<li>Also make sure that no pin is shorted to ground.</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_SMD.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_PowerSupplies.html">Next &gt;&gt;</a> </p></body>
+</html>

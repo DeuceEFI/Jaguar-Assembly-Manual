@@ -1,0 +1,18 @@
+
+## Index
+  * [PCB Overview](#pcb_overview)
+  * [Using the BOM](#using_bom)
+  * [Sourcing the components](#sourcing_components)
+  * [Assembly Tools](#assembly_tools)
+  * [Assembling the PCB - SMD](#assembly_overview)
+  * [Baking the Assembled PCB](#pcb_bake)
+  * [Assembling the PCB - Power Supplies](#assembly_PS)
+  * [Assembling the PCB - MCU/USB Components](#assembly_MCU_components)
+  * [Installing the Serial Monitor](#sm_install)
+  * [Assembling the PCB - Analog Inputs](#assembly_brv)
+  * [Assembling the PCB - Outputs](#assembly_ignition)
+  * [Assembling the PCB - Optional Pin Strips](#assembly_pinstrips)
+  * [Loading Firmware](#firmware_upload)
+  * [Testing Inputs](#testing_inputs)
+  * [Testing Outputs](#testing_outputs)
+  * [Installation](#installation)
