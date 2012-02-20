@@ -10,7 +10,7 @@
 
 ###Connect the following **ground** connections to the engine sensors:
 
-- **Sensor-GND**	Located in the upper right of the board near JP6.  This is used for the TPS sensor ground connection and should be connected directly to the TPS sensor.
+- **Sensor-GND**	Located in the upper right of the board near JP6.  This is used for the TPS sender ground connection and should be connected directly to the TPS sensor.
 - **Sensor-GND**	Located in the upper right of the board near C38.  This is used for the primary analog sensor signal ground and should be connected to the engine block.
 - **Sensor-GND**	Located in the upper right of the board near C33.  This is used for the secondary analog sensor signal ground and should be connected to the engine block.
 
@@ -30,11 +30,11 @@ BRV-12v should be connected separately through a relay back to the battery to me
 ###Connect the following analog sensor connections to the Jaguar board:
 
 - **IAT**	Located in the upper middle section of the board near R27. This should be connected to the **TAN** wire on most GM vehicles.
-- **MAT**	Located in the upper middle section of the board near C28. This should be connected to the **** wire on most GM vehicles.
-- **CHT**	Located in the upper middle section of the board near R31. This should be connected to the **** wire on most GM vehicles.
+- **MAF**	Located in the upper middle section of the board near C28. This should be connected to the **YELLOW** wire on the MAF sensor on most GM vehicles.
+- **CHT**	Located in the upper middle section of the board near R31. This should be connected to the **YELLOW** wire on the Coolant Temperature Sensor on most GM vehicles.
 - **O2**	Located in the upper right section of the board near R33. This should be connected to the analog linear output of your wideband O2 lamda sensor.
-- **TPS**	Located in the upper right section of the board near R34. This should be connected to the **** wire on most GM vehicles.
-- **TPS-5v**	Located in the top center of the board near D14. This should be connected to the **GREY** wire going to the TPS unit on most GM vehicles.
+- **TPS**	Located in the upper right section of the board near R34. This should be connected to the **DARK BLUE** wire on the TPS sender on most GM vehicles.
+- **TPS-5v**	Located in the top center of the board near D14. This should be connected to the **GREY** wire going to the TPS sender on most GM vehicles.
 
 
 ## RPM/Position Sensors ##

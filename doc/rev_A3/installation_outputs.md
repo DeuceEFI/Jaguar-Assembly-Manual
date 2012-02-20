@@ -24,3 +24,5 @@
 
 - **ACC-**	Located in the upper left section of the board between D42 and R76.  This should be connected to the negative wire that controls an Accessory Relay, if needed for your application.
 
+An example would be: I am using the **ACC-** output to drive a relay that controls the Torque Convertor Clutch (TCC) (**TAN/BLACK** wire) on my GM Turbo-Hydro 700R4 transmission.  See the [Jaguar] forum for more details.
+
