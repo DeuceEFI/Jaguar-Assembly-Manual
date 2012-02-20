@@ -69,4 +69,5 @@ The following have positions on the PCB, but not required for operation (they ar
 - **U8**	*(Opto Isolator)*
 - **U9**	*(Opto Isolator)*
 
+**NOTE: These are OPTIONAL as the Opto Isolators were proven not to be fast enough during Jaguar prototype testing.**
 --/ 

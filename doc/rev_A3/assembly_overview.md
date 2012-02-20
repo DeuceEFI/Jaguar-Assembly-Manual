@@ -16,7 +16,7 @@ The component placement directions will always be referenced in the following ma
 - PCB TOP (SMD) side orientation: 
 	- "**DeuceEFI**", "**Jaguar**", "**Rev A.3**" and "**designed for FreeEMS**" will always be visible on the right hand side.
 
-- PCB BOTTOM (Thru Hole) side orientation:
+- PCB BOTTOM (Through Hole) side orientation:
 	- All "**R**", "**C**", "**JP**" and the wire connection point silkscreens will be visible on this side. 
 
 

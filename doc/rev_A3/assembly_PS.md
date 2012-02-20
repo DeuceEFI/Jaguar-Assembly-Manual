@@ -6,7 +6,7 @@ Orient the Jaguar Revision A.3 board so that the U6 (MPX4100AP) is located to th
 **Step 7 :** 
 /-- 337x260 img/placeholder_image.png "" Install MCU power supply components.
 
- 1. **U3** *(LM2937ET-5.0)* Install this component from the Thru Hole side with the heatsink facing away from the center of the board.
+ 1. **U3** *(LM2937ET-5.0)* Install this component from the Through Hole side with the heatsink facing away from the center of the board.
  2. **C13** *(10µF)* Polarised tantalum capacitor; Make sure that it is oriented so that the negative lead is towards the bottom of the board.
  3. **C15** *(0.1µF)* 
  4. **D44** *(1N5818-TP)* Direction dependant, orient the **K** lead to the bottom edge of the board. This is indicated by the white line. 
@@ -32,7 +32,7 @@ Orient the Jaguar Revision A.3 board so that the U6 (MPX4100AP) is located to th
 **Step 9 :** 
 /-- 337x260 img/placeholder_image.png "" Install Analog Sensors power supply components.
 
- 1. **U2** *(LM2937ET-5.0)* Install this component from the Thru Hole side with the heatsink facing away from the center of the board.
+ 1. **U2** *(LM2937ET-5.0)* Install this component from the Through Hole side with the heatsink facing away from the center of the board.
  2. **C12** *(10µF)* Polarised tantalum capacitor; Make sure that it is oriented so that the negative lead is towards the bottom of the board.
  3. **C14** *(0.1µF)* 
  4. **D43** *(1N5818-TP)* Direction dependant, orient the **K** lead to the top edge of the board. This is indicated by the white line. 
