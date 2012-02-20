@@ -1,6 +1,6 @@
 #### TPS circuit
 **Step 23 :**
-/-- 337x260 img/placeholder_image.png "" TPS circuit components. 
+/-- 337x260 img/placeholder_image.png "TPS circuit components" 
 
 - **C35**	*(0.1µF)*
 - **C37**	*(0.22µF)* 

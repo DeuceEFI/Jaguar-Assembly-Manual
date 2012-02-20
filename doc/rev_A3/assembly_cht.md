@@ -1,6 +1,6 @@
 ####CHT circuit
 **Step 19 :**
-/-- 337x260 img/placeholder_image.png "" CHT circuit components.
+/-- 337x260 img/placeholder_image.png "CHT circuit components"
 
 - **C33**	*(0.1µF)*
 - **C36**	*(1µF)* 

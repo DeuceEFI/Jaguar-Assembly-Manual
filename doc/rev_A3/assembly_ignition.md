@@ -1,15 +1,17 @@
 #### Ignition circuits
 **Step 24 :**
-/-- 337x260 img/placeholder_image.png "" Install ignition XOR components. 
+/-- 337x260 img/placeholder_image.png "Install ignition XOR components" 
 
-- **R14** *(1k ohm)*
-- **R15** *(470 ohm)*
-- **R64** *(1k ohm)*
-- **R65** *(1k ohm)*
-- **JP1** *(3 pin 0.100" header strip)* for selecting inverted or non-inverted input.
-- **JP2** *(3 pin 0.100" header strip)* for selecting inverted or non-inverted output.
-- **JP7** *(wire jumper)*  Install a wire jumper between these pads for normal operation.
-- **JP8** *(wire jumper)*  Install a wire jumper between these pads for normal operation.
-- **U5**  *(74HC86 XOR Gate)*
+- **R14**	*(1k ohm)*
+- **R15**	*(470 ohm)*
+- **R64**	*(1k ohm)*
+- **R65**	*(1k ohm)*
+- **JP1**	*(3 pin 0.100" header strip)* for selecting inverted or non-inverted input.
+- **JP2**	*(3 pin 0.100" header strip)* for selecting inverted or non-inverted output.
+- **JP7**	*(wire jumper)*  Install a wire jumper between these pads for normal operation.
+- **JP8**	*(wire jumper)*  Install a wire jumper between these pads for normal operation.
+- **U5**	*(74HC86 XOR Gate)*
+
+JP7 and JP8 are there if someone wants to use MCU pins other than Port T0 (JP7) and Port T1 (JP8) with the XOR I/O circuits.
 --/
 

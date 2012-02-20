@@ -1,6 +1,6 @@
 #### IAT circuit
 **Step 21 :**
-/-- 337x260 img/placeholder_image.png "" IAT circuit components. 
+/-- 337x260 img/placeholder_image.png "IAT circuit components" 
 
 - **C29**	*(0.1µF)*
 - **C31**	*(1µF)* 

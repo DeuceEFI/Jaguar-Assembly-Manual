@@ -17,13 +17,16 @@
 12. Power cycle the Jaguar board.
 
 *The FreeEMS Bench Test firmware should now be installed on your Jaguar board.*
+
+You will use this procedure to load different FreeEMS firmware from this point forward.
+
 --/
 
-/-- 337x260 img/operation/FreeEMS_loader_advanced.png "" Communication settings --/
+/-- 337x260 img/operation/FreeEMS_loader_advanced.png "Communication settings" --/
 
 ## Verifying correct operation of the firmware ##
 
-/-- 337x260 img/operation/CuteComDataStreaming.png "" CuteCom streaming FreeEMS data logs
+/-- 337x260 img/operation/CuteComDataStreaming.png "CuteCom streaming FreeEMS data logs"
 
 1. Connect CuteCom with the correct settings and hex mode on.
 2. Verify that data is streaming past at a high rate.

@@ -30,7 +30,9 @@ The reflow assembly process is rated 6/10 for difficulty of assembly :
 
 #### Soldering iron, method 2
 
-The process of assembly with a soldering iron is rated 8/10 :
+The process of assembly with a soldering iron is rated 8/10 for difficulty of assembly :
+
+Follow Method 1 procedure to install the components, but use you fine tipped soldering iron to apply heat to each leg of the component one at a time.  Make sure to go over each joint with a high optical power magnifying glass to ensure you don't have any solder bridges.
 
 - **Method 2 tool requirements** :
 

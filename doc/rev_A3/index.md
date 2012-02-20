@@ -15,4 +15,4 @@
   * [Loading Firmware](#firmware_upload)
   * [Testing Inputs](#testing_inputs)
   * [Testing Outputs](#testing_outputs)
-  * [Installation](#installation)
+  * [Installation](#installation_overview)

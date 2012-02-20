@@ -39,7 +39,7 @@ Some of these acronyms are used in the schematic documentation.
 	- This is an alternative to the MAP sensor that is unsupported at this time, however the circuit is cheap and can be used as a general purpose analog input also.
  
 - **MAP**: *(**M**anifold **A**bsolute **P**ressure)* 
-	- The BOM is tailored to a normally aspirated vehicle with the preferred sensor (MPX4100AP) and provides sufficient accuracy for all naturally aspirated vehicles.  If you are going to use the Jaguar on a boosted vehicle then you should use a MPX4250AP which has sufficient range to cover boosted applications up to 21psi. If you are planning boost levels in excess of or close to 21psi, from a relatively large turbo, there are other options that you need to investigate.
+	- The BOM is tailored to a normally aspirated vehicle with the preferred sensor (MPX4100AP) and provides sufficient accuracy for all naturally aspirated vehicles.  If you are going to use the Jaguar board on a boosted vehicle then you should use a MPX4250AP which has sufficient range to cover boosted applications up to 21psi. If you are planning boost levels in excess of or close to 21psi, from a relatively large turbo, there are other options that you need to investigate.
 
 - **O2**: *(**O**xygen)*
   	- Only linear wide-band lambda sensors are supported at this time by the freeems-vanilla firmware.

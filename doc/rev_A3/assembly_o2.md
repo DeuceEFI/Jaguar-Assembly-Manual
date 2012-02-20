@@ -1,6 +1,6 @@
-#### O2 circuit
+#### Wideband O2 lamba input circuit
 **Step 22 :**
-/-- 337x260 img/placeholder_image.png "" Exhaust O2 circuit components.
+/-- 337x260 img/placeholder_image.png "Exhaust O2 circuit components"
 
 - **C34**	*(0.1µF)*
 - **C38**	*(0.22µF)* 

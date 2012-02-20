@@ -3,7 +3,7 @@
 These are the necessary components for the MCU to function.
 
 **Step 11 :**
-/-- 337x260 img/placeholder_image.png "" MCU Oscillator and PLL circuit components. 
+/-- 337x260 img/placeholder_image.png "MCU Oscillator and PLL circuit components" 
 
 - **C1**	*(0.22µF)*
 - **C2**	*(0.22µF)*
@@ -39,7 +39,7 @@ These are the necessary components for the MCU to function.
 These are the necessary components for the USB to MCU communications to function.
 
 **Step 12 :**
-/-- 337x260 img/placeholder_image.png "" USB circuit components. 
+/-- 337x260 img/placeholder_image.png "USB UART circuit components" 
 
 - **C39**	*(0.1µF)*
 - **C40**	*(4.7µF)*
@@ -53,20 +53,25 @@ These are the necessary components for the USB to MCU communications to function
 - Install a jumper wire from **TX** (near R60) to **TXB** (near C40).  This bypasses the optocoupler circuit.
 
 --/ 
-#### USB UART Optional Components Installation
+#### USB UART Optocoupler Components Installation
 
-The following have positions on the PCB, but not required for operation (they are available for experimenting):
+The following have positions on the PCB, but not required for operation if the wire jumpers mentioned above in Step 12 are used:
 
 **Step 13 :**
-/-- 337x260 img/placeholder_image.png "" Optional USB circuit components. 
 
-- **R55**	*(2.4k ohm)*	Pull up for RESET pin.
-- **R56**	*(1k - 2.4k ohm)*	Optional for RX Optocoupler
-- **R60**	*(10k ohm)*	Optional for RX Optocoupler
-- **R59**	*(10k ohm)*	Optional for TX Optocoupler
-- **R61**	*(1k - 2.4k ohm)*	Optional for TX Optocoupler
-- **U8**	*(Optocoupler)*
-- **U9**	*(Optocoupler)*
+If you want to use the optocoupler circuits then **DO NOT** install the jumper wires from **RX** to **RXB** or **TX** to **TXB** mentioned in **Step 12**.
+
+/-- 337x260 img/placeholder_image.png "Optional USB optocoupler circuit components" 
+
+- **R55**	*(2.4k ohm)* Pull up for RESET pin.
+- **R56**	*(1k - 2.4k ohm)* Optional for RX Optocoupler
+- **R60**	*(10k ohm)* Optional for RX Optocoupler
+- **R59**	*(10k ohm)* Optional for TX Optocoupler
+- **R61**	*(1k - 2.4k ohm)* Optional for TX Optocoupler
+- **U8**	*(Optocoupler)* RX Optocoupler
+- **U9**	*(Optocoupler)* TX Optocoupler
+
+**U8** and **U9** may be hand soldered to the board by first applying some solder paste to the PCB pads and then placing the optocoupler on the pads an applying heat from your soldering iron one pad at a time.  You may also install **U8** and **U9** after Step 3 when you install the **FT232RL** chip before the reflow soldering cycle.
 
 **NOTE: The optocouplers and their supporting resistors are OPTIONAL if the end user would like to use an inverter to power their PC while tuning.**
 --/ 

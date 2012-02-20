@@ -3,7 +3,7 @@
 These are purely optional, you may choose to hard wire jumpers between these connections as described in the Installation section.
 
 **Step 29 :**
-/-- 337x260 img/placeholder_image.png  "" IAT circuit components. 
+/-- 337x260 img/placeholder_image.png  "Pin Strips" 
 
 - **P20**	*(4 position 0.100" Pin Strip)* Port T outputs 4-7
 - **P21**	*(4 position 0.100" Pin Strip)* Injector Inputs 1-4

@@ -10,6 +10,7 @@ structure:
     - intro # introductionary chapter
     - index # index (not used yet)
     - pcb_overview # overview of the board
+    - footer
   - materials:
     - using_bom # BOM configuration chapter
     - sourcing_components # chapter guiding how to order components
@@ -48,4 +49,7 @@ structure:
   - testing_outputs:
     - testing_outputs
   - installation:
-    - installation # how to install your Jaguar Revision A3 PCB
+    - installation_overview # how to install the Jaguar Revision A3 PCB
+    - installation_inputs # how to connect your inputs to the Jaguar Revision A3 PCB
+    - installation_outputs # how to connect the outputs from the Jaguar Revision A3 PCB
+    - installation_injectors # how to connect the injectors to the Jaguar Revision A3 PCB

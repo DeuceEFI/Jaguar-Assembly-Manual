@@ -1,6 +1,6 @@
 #### MAT circuit
 **Step 20 :**
-/-- 337x260 img/placeholder_image.png "" MAT circuit components. 
+/-- 337x260 img/placeholder_image.png "MAT circuit components" 
 
 - **C28**	*(0.1µF)*
 - **C30**	*(1µF)* 
