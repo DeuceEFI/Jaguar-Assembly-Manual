@@ -9,8 +9,9 @@ structure:
   - index:
     - intro # introductionary chapter
     - index # index (not used yet)
-    - pcb_overview # overview of the board
     - footer
+  - overview:
+    - pcb_overview # overview of the board
   - materials:
     - using_bom # BOM configuration chapter
     - sourcing_components # chapter guiding how to order components

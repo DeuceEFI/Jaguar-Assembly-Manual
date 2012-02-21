@@ -2,13 +2,14 @@
 
 The Bill of Materials (**BOM**) is broken down by component type and for those components that have multiple values you, as the end user, can pick and choose which components are best suited to your project. For each sub-circuit there is a matching assembly section.
 
-Open the BOM, it is found in the **docs** directory and is called **Jaguar.ods**.
+To view the BOM, it can be found in the **docs** directory and is called **Jaguar.ods**.
 
 ### Overview with Important notes
 
 - Only order and install one USB connector (either the USB-B **or** USB-B-mini but **NOT** both).
 
 #### Legend of acronyms ####
+
 Some of these acronyms are used in the schematic documentation.
 
 - **AAP**: *(**A**tmospheric **A**bsloute **P**ressure)* 
@@ -16,6 +17,9 @@ Some of these acronyms are used in the schematic documentation.
 
 - **BDM**: *(**B**ackground **D**ebug **M**odule)*
 	- Used to program the Serial Monitor and for additional troubleshooting.
+
+- **BRV**: *(**B**attery **R**eference **V**oltage)*
+	- Input circuitry to convert battery voltage to an acceptable voltage input for the MCU.
 
 - **CHT**: *(**C*oolant **H**ead **T**emperature)*
 	- Sensor used to measure engine coolant temperature in the water jacket.
@@ -36,7 +40,10 @@ Some of these acronyms are used in the schematic documentation.
 - **INJ**: *(**Inj**ector)*
 
 - **MAF**: *(**M**ass **A**ir **F**low)* 
-	- This is an alternative to the MAP sensor that is unsupported at this time, however the circuit is cheap and can be used as a general purpose analog input also.
+	- This is an alternative to the MAP sensor that is unsupported at this time, however the circuit is cheap and can be used as a general purpose analog input also.  There is a pad to connect supporting circuitry to for this input (labeled **MAF Sensor**) or you might be able to use the MAT sensor input instead.  Check the [Jaguar] forum for more details.
+
+- **MAT**: *(**M**anifold **A**ir **T**emperature)*
+	- Sensor used to measure the air temperature inside the intake manifold. 
  
 - **MAP**: *(**M**anifold **A**bsolute **P**ressure)* 
 	- The BOM is tailored to a normally aspirated vehicle with the preferred sensor (MPX4100AP) and provides sufficient accuracy for all naturally aspirated vehicles.  If you are going to use the Jaguar board on a boosted vehicle then you should use a MPX4250AP which has sufficient range to cover boosted applications up to 21psi. If you are planning boost levels in excess of or close to 21psi, from a relatively large turbo, there are other options that you need to investigate.

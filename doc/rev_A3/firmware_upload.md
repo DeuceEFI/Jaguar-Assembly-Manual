@@ -1,8 +1,16 @@
 ## Uploading the firmware ##
 
-/-- 337x260 img/operation/FreeEMS_loader_settings.png "FreeEMS Loader Application"
+/-- 337x260 img/operation/FreeEMS_loader_settings.png "FreeEMS Loader Application" 
+- These are the communications settings for the FreeEMS firmware:
+	- **Baud rate**: 115200
+	- **Data bits**: 8
+	- **Stop bits**: 1
+	- **Parity**: ODD
 
-1. Install [Seans loader].
+--/
+
+/-- 337x260 img/operation/FreeEMS_loader_advanced.png "Communication settings" 
+1. Install [Seans loader] or [MegaTunix], these instructions are for Seans loader.
 2. Connect a USB cable between your computer and the Jaguar board.
 3. Jumper the load/run header.
 4. Turn the power supply to the Jaguar board **on**.
@@ -16,13 +24,15 @@
 11. Remove the load/run jumper.
 12. Power cycle the Jaguar board.
 
-*The FreeEMS Bench Test firmware should now be installed on your Jaguar board.*
-
-You will use this procedure to load different FreeEMS firmware from this point forward.
-
+*The FreeEMS Bench Test firmware is now be installed on your Jaguar board.*
 --/
 
-/-- 337x260 img/operation/FreeEMS_loader_advanced.png "Communication settings" --/
+####You will use the above procedure to load different FreeEMS firmware from this point forward.
+####You may also use the [MegaTunix] Firmware Loader to load the FreeEMS firmware if you prefer.
+
+
+
+
 
 ## Verifying correct operation of the firmware ##
 
