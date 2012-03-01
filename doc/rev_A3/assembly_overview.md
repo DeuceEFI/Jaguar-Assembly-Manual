@@ -17,7 +17,7 @@ The component placement directions will always be referenced in the following ma
 	- "**DeuceEFI**", "**Jaguar**", "**Rev A3**" and "**designed for FreeEMS**" will always be visible on the right hand side.
 
 - PCB BOTTOM (Through Hole) side orientation:
-	- All "**R**", "**C**", "**JP**" and the wire connection point silkscreens will be visible on this side.  The U6 (MPX4100AP) silk screen is located to the right side and U3 will be in the lower left side.  You should not see any of the SMD components, they should be on the back side of the board. 
+	- All "**R**", "**C**", "**JP**" and the wire connection point silkscreens will be visible on this side.  The U6 (MPX4100AP) silk screen is located to the left side and U3 will be in the upper left side.  You should not see any of the SMD components, they should be on the back side of the board. 
 
 
 **Follow these steps in order:**
