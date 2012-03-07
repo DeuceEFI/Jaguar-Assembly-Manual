@@ -71,7 +71,6 @@ If you want to use the optocoupler circuits then **DO NOT** install the jumper w
 
 - **R55**	*(2.4k ohm)* Pull up for RESET pin.
 - **R56**	*(1k - 2.4k ohm)* Optional for RX Optocoupler
-Optional for RX Optocoupler
 - **R59**	*(10k ohm)* Optional for TX Optocoupler
 - **R61**	*(1k - 2.4k ohm)* Optional for TX Optocoupler
 - **U8**	*(Optocoupler)* RX Optocoupler
