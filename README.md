@@ -1,4 +1,4 @@
-# Jaguar for FreeEMS documentation repository
+# Jaguar PCB for FreeEMS construction documentation repository
 
 ## Introduction
 
@@ -53,6 +53,6 @@ Doing that will build a HTML pages into the html directory.
 
 ## Contacting us
 
-- IRC: `#freeems-dev` on the FreeNode network.
+- IRC: `#freeems-dev` on the FreeNode network and mention DeuceEFI
 - Web: [http://freeems.org/]()
 - Forum: [http://forum.diyefi.org]()
