@@ -16,22 +16,10 @@ First we will install the MCU, this will be one of the most difficult components
 *Congratulations the MCU is now mounted*
 
 
-####Crystal Oscillator Resistor
-
-**Step 2 :** 
-/-- 337x260 img/placeholder_image.png "R62" --/
-
-Next we will install R62, this will be another of the more difficult components for you to place. It will require a steady hand and patience. Take care placing the chip resistor in the correct location.
-
- 1. Take the syringe of solder paste and apply a bead to each of the copper pads for the R62 pins this will be 2 pads in total. 
- 2. Now place R62 in location.
-
-*Congratulations the R62 is now mounted*
-
 
 ####USB UART
 
-**Step 3 :** 
+**Step 2 :** 
 /-- 509x419 img/USB.png "FT232RL" --/ 
 
 Next we will install the USB to Serial UART, this will be another of the more difficult components for you to place. It will require a steady hand and patience. Take care placing the FT232RL as the pin pitch is the same as the MCU.
@@ -47,7 +35,7 @@ You may also wish to install the optocouplers (U8 and U9) at this point if you k
 
 ####MAX9926UAEE+
 
-**Step 4 :** 
+**Step 3 :** 
 /-- 639x378 img/MAX9926.png "MAX9926UAEE+" --/
 
 Next we will install the MAX9926UAEE+, this will be another of the more difficult components for you to place. It will require a steady hand and patience. Take care placing the MAX9926UAEE+ as the pin pitch is the same as the MCU.
@@ -60,7 +48,7 @@ Next we will install the MAX9926UAEE+, this will be another of the more difficul
 
 ####VNN7NV0413TR
 
-**Step 5 :** 
+**Step 4 :** 
 /-- 604x433 img/Fuel-Fan-Acc.png "VNN7NV0413TR MOSFETs" --/
 
 Next we will install the VNN7NV0413TR MOSFETs, this will be the beginning of the easier components for you to place. It will require a steady hand and patience. 
@@ -73,7 +61,7 @@ Next we will install the VNN7NV0413TR MOSFETs, this will be the beginning of the
 
 ####VND7NV04
 
-**Step 6 :** 
+**Step 5 :** 
 /-- 500x490 img/Injectors.png "VND7NV04 MOSFETs" --/
 
 Next we will install the VND7NV04 MOSFETs, this will be the beginning of the easier components for you to place. It will require a steady hand and patience. Only mount the number of these to match the number of injectors you wish to drive. <br>

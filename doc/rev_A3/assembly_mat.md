@@ -1,6 +1,6 @@
 #### MAT circuit
 **Step 20 :**
-/-- 337x260 img/placeholder_image.png "MAT circuit components" --/
+/-- 337x260 img/inputs.png "MAT circuit components" --/
 
 - **C28**	*(0.1µF)* located bottom left center between R26 and C32.
 - **C30**	*(1µF)* located lower left center between R13 and D9. 

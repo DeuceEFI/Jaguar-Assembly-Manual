@@ -1,6 +1,6 @@
 #### Fuel circuit
 **Step 25 :**
-/-- 337x260 img/placeholder_image.png "Fuel circuit components" --/
+/-- 337x260 img/fuel.png "Fuel circuit components" --/
 
 - **R53**	*(2.4k ohm)* located bottom lower right between D30 and D40. 
 - **R54**	*(1k ohm)* located bottom lower right below R8. 
@@ -12,7 +12,7 @@
 
 #### FAN circuit
 **Step 26 :**
-/-- 337x260 img/placeholder_image.png "Fan circuit components" --/
+/-- 337x260 img/fan.png "Fan circuit components" --/
 
 - **R72**	*(2.4k ohm)*
 - **R74**	*(1k ohm)*
@@ -24,7 +24,7 @@
 
 #### Accessory circuit
 **Step 27 :**
-/-- 337x260 img/placeholder_image.png "Accessory circuit components" --/
+/-- 337x260 img/acc.png "Accessory circuit components" --/
 
 - **R75**	*(2.4k ohm)*
 - **R77**	*(1k ohm)*

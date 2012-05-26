@@ -1,6 +1,6 @@
 #### Ignition circuits
 **Step 24 :**
-/-- 337x260 img/placeholder_image.png "Install ignition XOR components" --/
+/-- 337x260 img/ignition.png "Install ignition XOR components" --/
 
 - **R14**	*(1k ohm)* located upper right between R22 and R64. 
 - **R64**	*(1k ohm)* located upper right between R14 and BDM.

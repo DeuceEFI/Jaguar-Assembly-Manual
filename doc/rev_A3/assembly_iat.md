@@ -1,6 +1,6 @@
 #### IAT circuit
 **Step 21 :**
-/-- 337x260 img/placeholder_image.png "IAT circuit components" --/ 
+/-- 337x260 img/inputs.png "IAT circuit components" --/ 
 
 - **C29**	*(0.1µF)* located bottom center between C31 and D31.
 - **C31**	*(1µF)* located bottom center between C33 and C29. 

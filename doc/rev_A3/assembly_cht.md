@@ -1,6 +1,6 @@
 ####CHT circuit
 **Step 19 :**
-/-- 337x260 img/placeholder_image.png "CHT circuit components" --/
+/-- 337x260 img/inputs.png "CHT circuit components" --/
 
 - **C33**	*(0.1µF)* located bottom center between R32 and D11.
 - **C36**	*(1µF)* located bottom center between JP6 and D12. 

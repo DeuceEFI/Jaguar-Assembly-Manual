@@ -7,7 +7,7 @@
 
 #### AFTER BAKING INSPECTION
 
-- Check the entire PCB for Solder bridges, especially on **MCU (U1), R62, U7, U4 and all the Qs**
+- Check the entire PCB for Solder bridges, especially on **MCU (U1), U7, U4 and all the Qs**
 - Examine the new solder joints for dryness, this is normally depicted by dull looking solder, it all should be rather shinny.
 - Clear any solder beads that may have formed on the PCB, this can easily be performed by using a tooth brush and giving the PCB a quick and careful scrub.
 

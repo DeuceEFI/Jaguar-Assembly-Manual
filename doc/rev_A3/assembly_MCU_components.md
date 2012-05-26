@@ -3,7 +3,7 @@
 These are the necessary components for the MCU to function.
 
 **Step 11 :**
-/-- 337x260 img/placeholder_image.png "MCU Oscillator and PLL circuit components" --/ 
+/-- 337x260 img/oscillator_pll.png "MCU Oscillator and PLL circuit components" --/ 
 
 Install the following components for the MCU:
 
@@ -42,7 +42,7 @@ Install the following components for the MCU:
 These are the necessary components for the USB to MCU communications to function.
 
 **Step 12 :**
-/-- 337x260 img/placeholder_image.png "USB UART circuit components" --/ 
+/-- 337x260 img/usb_uart.png "USB UART circuit components" --/ 
 
 - **C39**	*(0.1µF)* located near the left center of the board up and right of U6.
 - **C41**	*(0.1µF)* located near the top left of the board between J1 and R55.

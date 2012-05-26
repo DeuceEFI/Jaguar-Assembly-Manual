@@ -1,6 +1,6 @@
 ####RPM/Position Inputs
 **Step 16 :**
-/-- 337x260 img/placeholder_image.png "Install common RPM input components" --/ <br>
+/-- 337x260 img/rpm.png "Install common RPM input components" --/ <br>
 *Only perform either the Hall/Opto/Digital* **OR** *the VR Input Sections but not both.*
 
 - **Install Common RPM Components**

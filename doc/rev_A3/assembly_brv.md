@@ -1,6 +1,6 @@
 #### BRV Circuit
 **Step 14 :**
-/-- 337x260 img/placeholder_image.png "Install BRV circuit components" --/
+/-- 337x260 img/brv.png "Install BRV circuit components" --/
 
 - **R28**	*(470 ohm)* located center left between D7 and R29.
 - **R29**	*(3.9k ohm)* located center left between C28 and C36.	

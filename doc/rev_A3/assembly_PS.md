@@ -4,7 +4,7 @@ Orient the Jaguar Revision A3 board so that the U6 (MPX4100AP) silk screen is lo
 
 #### Install MCU Power Supply components
 **Step 7 :** 
-/-- 337x260 img/placeholder_image.png "Install MCU power supply components" --/
+/-- 337x260 img/mcu_power_supply.png "Install MCU power supply components" --/
 
  1. **U3** *(LM2937ET-5.0)* Install this component from the Through Hole side with the heatsink facing away from the center of the board.
  2. **C15** *(0.1µF)* 
@@ -18,7 +18,7 @@ Orient the Jaguar Revision A3 board so that the U6 (MPX4100AP) silk screen is lo
 
 ####Test MCU Power Supply
 **Step 8 :**
-/-- 337x260 img/placeholder_image.png "Test MCU power supply" --/
+/-- 337x260 img/mcu_power_supply.png "Test MCU power supply" --/
 
  1. Connect 12v supply positive (+) to the pad labeled **12v-SW** between D44 and U6.
  2. Connect 12v supply negative (-) to the pad labeled **GND** between D3 an R55.
@@ -32,7 +32,7 @@ Orient the Jaguar Revision A3 board so that the U6 (MPX4100AP) silk screen is lo
 
 #### Install Analog Sensors Power Supply components
 **Step 9 :** 
-/-- 337x260 img/placeholder_image.png "Install Analog Sensors power supply components" --/
+/-- 337x260 img/analog_power_supply.png "Install Analog Sensors power supply components" --/
 
  1. **U2** *(LM2937ET-5.0)* Install this component from the Through Hole side with the heatsink facing away from the center of the board.
  2. **C14** *(0.1µF)* 
@@ -46,7 +46,7 @@ Orient the Jaguar Revision A3 board so that the U6 (MPX4100AP) silk screen is lo
 
 ####Test Analog Sensors Power Supply
 **Step 10 :**
-/-- 337x260 img/placeholder_image.png "Test Analog Sensors power supply" --/
+/-- 337x260 img/analog_power_supply.png "Test Analog Sensors power supply" --/
 
  1. Connect 12v supply positive (+) to the pad labeled **12v-SW** between D44 and U6.
  2. Connect 12v supply negative (-) to the pad labeled **GND** between D3 an R55.

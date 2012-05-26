@@ -1,6 +1,6 @@
 #### Wideband O2 lamba input circuit
 **Step 22 :**
-/-- 337x260 img/placeholder_image.png "Exhaust O2 circuit components" --/
+/-- 337x260 img/inputs.png "Exhaust O2 circuit components" --/
 
 - **C34**	*(0.1µF)* located bottom lower left between D17 and C35.
 - **C38**	*(0.22µF)* located bottom lower left between D16 and D17. 

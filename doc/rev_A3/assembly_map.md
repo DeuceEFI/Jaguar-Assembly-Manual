@@ -1,6 +1,6 @@
 #### MAP circuit
 **Step 15 :**
-/-- 337x260 img/placeholder_image.png "Install MAP components" --/
+/-- 337x260 img/map.png "Install MAP components" --/
 
 - **C20**	*(0.22µF)* located left center between C21 and R13.	
 - **C22**	*(0.22µF)* located left center between U6 and C20.
