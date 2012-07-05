@@ -3,7 +3,7 @@
 *BAKING DETAILS*
 - Place the completed board(s) in your reflow soldering oven and start the reflow cycle.
 - Once the cycle is complete and the board(s) have cooled, remove them from the reflow oven for inspection.
---/
+
 
 #### AFTER BAKING INSPECTION
 

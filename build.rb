@@ -93,8 +93,7 @@ class BuildDoc
 <div class=pict_title>#{title}
 </div>
 </a>
-<div class=text>#{html}
-</div>
+
 </div>
 }
   end
