@@ -1,110 +1,68 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Jaguar-assembly-manual by DeuceEFI</title>
-  </head>
+<html lang="en">
+<head>
+<title>Jaguar Revision A3 for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
 
-  <body>
-    <div id="container">
-      <div class="inner">
+<p><hr id="prev_next"></p>
 
-        <header>
-          <h1>Jaguar-assembly-manual</h1>
-          <h2>How to assemble a Jaguar PCB for FreeEMS</h2>
-        </header>
+<p><span class="prev_page_link">&lt;&lt; Previous</span> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="overview.html">Next &gt;&gt;</a> </p>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/DeuceEFI/Jaguar-Assembly-Manual/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/DeuceEFI/Jaguar-Assembly-Manual/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/DeuceEFI/Jaguar-Assembly-Manual" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
+<p><hr id="intro"></p>
 
-        <hr>
+<h1>Introduction</h1>
 
-        <section id="main_content">
-          <h1>Jaguar PCB for FreeEMS construction documentation repository</h1>
+<p>It is assumed that you came to this guide from one of the main sites, if not, see the <a href="http://forum.diyefi.org/viewforum.php?f=67">Jaguar</a> forum for more specific information on this design.</p>
 
-<h2>Introduction</h2>
-
-<p>This is a repository for documenting the assembly of a Jaguar Revision A.3 PCB for FreeEMS.</p>
-
-<p>The documentation is written in markdown syntax and can be converted to
-many formats, including HTML and PDF (only HTML generated with the included
-build script).</p>
-
-<h2>Installation</h2>
-
-<p>The build script is written in <a href="http://www.ruby-lang.org/">Ruby</a>, so you'll need to have Ruby installed.</p>
-
-<p>Some old versions of doesn't come with <a href="http://rubygems.org/">RubyGems</a>, so install that separately if you don't have a <code>gem</code> command available.</p>
-
-<p>The script itself depends on one of these <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a> libraries (in order of preference):</p>
+<p>This version of the manual includes instructions for the <strong>Jaguar Revision A3 board</strong>, which was produced as a small one-off run of just 4 bare PCBs by Andy Goss. </p>
 
 <ul>
-<li><code>rpeg-markdown</code></li>
-<li><code>rdiscount</code></li>
-<li>
-<code>bluecloth</code> (2.x and newer, not 1.0, which is broken)</li>
-</ul><p>To install the dependency, run:
-    sudo gem install rpeg-markdown</p>
-
-<p>If that fails (invalid build environment or such), try one of the others, like:
-    sudo gem install rdiscount</p>
-
-<p>You can even have all of them installed, if you want.</p>
-
-<h2>Usage</h2>
-
-<p>To build the documentation, run the build script:
-    ruby build.rb</p>
-
-<p>..or:
-    ./build.rb</p>
-
-<p>Doing that will build a HTML pages into the html directory.</p>
-
-<h2>Contributing</h2>
-
-<ul>
-<li>Read the <a href="http://daringfireball.net/projects/markdown/syntax">Markdown reference manual</a>
-</li>
-<li>Fork this project on <a href="https://github.com/">github</a>.</li>
-<li>Edit contents of the <a href="">doc/revA3</a> directory or create another directory with
-similar structure.</li>
-<li>Ensure the output of <code>build.rb</code> is valid (it's built into the <a href="">html/</a> -directory). Edit the .md files until it is!</li>
-<li>Commit and push your changes
-
-<ul>
-<li>Notify the original author with a pull request, if you use a fork.</li>
+<li>You will need to purchase parts required for your build, these are listed in <a href="materials.html#using_bom">the BOM</a> then install those parts.</li>
+<li>Then you will also need to program the Serial Monitor via the BDM programming port to get a functional boot loader installed.</li>
+<li>After the Serial Monitor is flashed with the BDM, the board can be programmed via a USB connection to your computer.</li>
 </ul>
-</li>
-</ul><h2>Contacting us</h2>
+
+<p>Click on any image to view it full size.</p>
+
+<p><hr id="index"></p>
+
+<h2>Index</h2>
 
 <ul>
-<li>IRC: <code>#freeems-dev</code> on the FreeNode network and mention DeuceEFI</li>
-<li>Web: <a href="">http://freeems.org/</a>
-</li>
-<li>Forum: <a href="">http://forum.diyefi.org</a>
-</li>
+<li><a href="overview.html#pcb_overview">PCB Overview</a></li>
+<li><a href="materials.html#using_bom">Using the BOM</a></li>
+<li><a href="materials.html#sourcing_components">Sourcing the components</a></li>
+<li><a href="general_info.html#assembly_tools">Assembly Tools</a></li>
+<li><a href="assembly_SMD.html#assembly_overview">Assembling the PCB - SMD</a></li>
+<li><a href="reflow.html#pcb_bake">Baking the Assembled PCB</a></li>
+<li><a href="assembly_PowerSupplies.html#assembly_PS">Assembling the PCB - Power Supplies</a></li>
+<li><a href="assembly_MCU_components.html#assembly_MCU_components">Assembling the PCB - MCU/USB Components</a></li>
+<li><a href="serial_monitor.html#sm_install">Installing the Serial Monitor</a></li>
+<li><a href="assembly_TH_Inputs.html#assembly_brv">Assembling the PCB - Analog Inputs</a></li>
+<li><a href="assembly_TH_Outputs.html#assembly_ignition">Assembling the PCB - Outputs</a></li>
+<li><a href="assembly_pin_strips.html#assembly_pinstrips">Assembling the PCB - Optional Pin Strips</a></li>
+<li><a href="firmware.html#firmware_upload">Loading Firmware</a></li>
+<li><a href="testing_inputs.html#testing_inputs">Testing Inputs</a></li>
+<li><a href="testing_outputs.html#testing_outputs">Testing Outputs</a></li>
+<li><a href="installation.html#installation_overview">Installation Overview</a></li>
+<li><a href="installation.html#installation_inputs">Installation Inputs</a></li>
+<li><a href="installation.html#installation_outputs">Installation Outputs</a></li>
+<li><a href="installation.html#installation_injectors">Installation Injectors</a></li>
 </ul>
-        </section>
 
-        <footer>
-          Jaguar-assembly-manual is maintained by <a href="https://github.com/DeuceEFI">DeuceEFI</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
+<p><hr id="footer"></p>
 
-        
-      </div>
-    </div>
-  </body>
+<p><em>The Jaguar Assembly Manual by Andy Goss is based on the Puma-HowTo created and written by Preston Saunders, editing by Fred Cooke and mark-down design by Juha-Jarmo Heinonen.</em></p>
+
+<p><em>FreeEMS Documentation is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a> for more details.</em></p>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><span class="prev_page_link">&lt;&lt; Previous</span> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="overview.html">Next &gt;&gt;</a> </p></body>
 </html>
