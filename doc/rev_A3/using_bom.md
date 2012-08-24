@@ -30,7 +30,7 @@ Some of these acronyms are used in the schematic documentation.
 - **DMM**: *(**D**igital **M**ulti**m**eter)*
 	- Used for testing amperage, resistance and voltage.
 
-- **GND**: *(**G**ro**nd**)*
+- **GND**: *(**G**rou**nd**)*
 
 - **IAT**: *(**I**ntake **A**ir **T**emperature)*
 	- Sensor used to measure outside air temperature, usually found in the air cleaner.
