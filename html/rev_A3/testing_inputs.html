@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaguar Revision A3 for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="firmware.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="testing_outputs.html">Next &gt;&gt;</a> </p>
+
+<p><hr id="testing_inputs"></p>
+
+<h1>Testing Inputs</h1>
+
+<p>It's important that you verify the correct operation of your input conditioning circuits before attempting to use the device on a vehicle.</p>
+
+<h2>Test BRV Input</h2>
+
+<ul>
+<li>Connect a 5v DC supply to the pad labeled <strong>BRV-12v</strong></li>
+<li>Connect the negative lead from the 5v DC supply to the pad labeled <strong>GND</strong></li>
+<li>Open MTX, you should see 5v DC registered for BRV</li>
+<li>Connect a 12v DC supply to the pad labeled <strong>BRV-12v</strong></li>
+<li>Connect the negative lead from the 12v DC supply to the pad labeled <strong>GND</strong></li>
+<li>Open MTX, you should see 12v DC registered for BRV</li>
+</ul>
+
+<h2>Testing analog sensor inputs</h2>
+
+<ul>
+<li>Attach a variable voltage source, such as a JimStim, to one of the Jaguar analog sensor inputs.</li>
+<li>Adjust the simulated sensor and observe the corresponding values changing within MTX.</li>
+<li>Repeat the process for all analog sensor inputs being used.
+
+<ul>
+<li>If there is no change seen within MTX check the following:
+
+<ul>
+<li>That you have the correct corresponding analog input.</li>
+<li>The analog sensor input circuit is correctly assembled.</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2>Testing RPM inputs</h2>
+
+<ul>
+<li><em>Attach an RPM signal source such as a JimStim</em></li>
+<li><em>Load appropriate code for that signal type.</em></li>
+</ul>
+
+<h3>Logic Analyser (LA) RPM check</h3>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/operation/ovl_rpm_la.png"><img src="img/operation/ovl_rpm_la.png" width=337 height=260 title="" alt="">
+<div class=pict_title>
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<h3>Full RPM range check</h3>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/operation/olv_rpm_fullbin.png"><img src="img/operation/olv_rpm_fullbin.png" width=337 height=260 title="Review of RPM logging" alt="Review of RPM logging">
+<div class=pict_title>Review of RPM logging
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<p><em>You are now ready to test your physical outputs using the Bench Test decoder.</em></p>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="firmware.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="testing_outputs.html">Next &gt;&gt;</a> </p></body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaguar Revision A3 for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="serial_monitor.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_TH_Outputs.html">Next &gt;&gt;</a> </p>
+
+<p><hr id="assembly_brv"></p>
+
+<h4>BRV Circuit</h4>
+
+<p><strong>Step 14 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/brv.png"><img src="img/brv.png" width=337 height=260 title="Install BRV circuit components" alt="Install BRV circuit components">
+<div class=pict_title>Install BRV circuit components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li><strong>R28</strong> <em>(470 ohm)</em> located center left between D7 and R29.</li>
+<li><strong>R29</strong> <em>(3.9k ohm)</em> located center left between C28 and C36.</li>
+<li><strong>R30</strong> <em>(1k ohm)</em> located center left between C27 and C32.</li>
+<li><strong>C27</strong> <em>(0.22µF)</em> located center left between D7 and R30.</li>
+<li><strong>C32</strong> <em>(0.1µF)</em> located center left between R30 and R29.</li>
+<li><strong>D6</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the left side of the PCB towards the white line. It is located center left between C4 and D7.</li>
+<li><strong>D7</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the right side of the PCB towards the white line. It is located center left between D6 and C27.</li>
+</ul>
+
+<p><hr id="assembly_map"></p>
+
+<h4>MAP circuit</h4>
+
+<p><strong>Step 15 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/map.png"><img src="img/map.png" width=337 height=260 title="Install MAP components" alt="Install MAP components">
+<div class=pict_title>Install MAP components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li><strong>C20</strong> <em>(0.22µF)</em> located left center between C21 and R13.</li>
+<li><strong>C22</strong> <em>(0.22µF)</em> located left center between U6 and C20.</li>
+<li><strong>C21</strong> <em>(0.33µF)</em> located left center between C23 and C44.</li>
+<li><strong>C23</strong> <em>(0.01µF)</em> located left center between U6 and C21.</li>
+<li><strong>R13</strong> <em>(1k ohm)</em> located left center between C20 and D16.</li>
+<li><strong>U6</strong> <em>(MPX4100AP)</em> for normally aspirated version, if for boosted application use MPX4250AP instead.</li>
+</ul>
+
+<p><hr id="assembly_rpm"></p>
+
+<h4>RPM/Position Inputs</h4>
+
+<p><strong>Step 16 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/rpm.png"><img src="img/rpm.png" width=337 height=260 title="Install common RPM input components" alt="Install common RPM input components">
+<div class=pict_title>Install common RPM input components
+</div>
+
+<p></a></p>
+
+<p></div>
+ <br>
+<em>Only perform either the Hall/Opto/Digital</em> <strong>OR</strong> <em>the VR Input Sections but not both.</em></p>
+
+<ul>
+<li><strong>Install Common RPM Components</strong>
+
+<ul>
+<li><strong>C24</strong> <em>(1nF)</em> located top center between R19 and R18. - ONLY IF NEEDED</li>
+<li><strong>C25</strong> <em>(1nF)</em> located top center between R16 and R19. - ONLY IF NEEDED</li>
+<li><strong>C26</strong> <em>(0.1µF)</em> located top center between C42 and C43.</li>
+<li><strong>C42</strong> <em>(10nF)</em> located top center between R19 and C26.</li>
+<li><strong>C43</strong> <em>(1µF)</em> located top center between C26 and R18.</li>
+<li><strong>R11</strong> <em>(10k ohm)</em> located top center between D4 and R10.</li>
+<li><strong>R12</strong> <em>(10k ohm)</em> located top center between R18 and P20.</li>
+<li><strong>R16</strong> <em>(10k ohm)</em> located top center between R17 and C25.</li>
+<li><strong>R17</strong> <em>(10k ohm)</em> located top center between JP10 and R16.</li>
+<li><strong>R18</strong> <em>(10k ohm)</em> located top center between C43 and R12.</li>
+<li><strong>R19</strong> <em>(10k ohm)</em> located top center between C25 and C24.</li>
+<li><strong>R9</strong> <em>(2.4k ohm)</em> located top center below D4. This is optional for diagnostics.</li>
+<li><strong>R10</strong> <em>(2.4k ohm)</em> located top center to the right of D5. This is optional for diagnostics.</li>
+<li><strong>D4</strong> <em>(Green LED)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom edge of the board (towards R9). This is indicated by the short lead of the LED. located top center above R9. This is optional for diagnostics.</li>
+<li><strong>D5</strong> <em>(Green LED)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the board (towards R17). This is indicated by the short lead of the LED. located top center above R11. This is optional for diagnostics.</li>
+</ul></li>
+</ul>
+
+<p><strong>Step 17 :</strong>
+- *<em>TACH - Hall/Opto/Digital RPM Input *</em><br>
+<strong>Install :</strong>
+ - <strong>R22</strong> <em>(1k ohm)</em> </p>
+
+<p><strong>OR</strong></p>
+
+<ul>
+<li>*<em>TACH - VR Input *</em><br>
+<strong>Install :</strong>
+
+<ul>
+<li><strong>R23</strong> <em>(5k ohm)</em></li>
+</ul></li>
+</ul>
+
+<p><strong>Step 18 :</strong>
+- *<em>CAM - Hall/Opto/Digital RPM Input *</em><br>
+<strong>Install :</strong>
+ - <strong>R21</strong> <em>(1k ohm)</em> </p>
+
+<p><strong>OR</strong></p>
+
+<ul>
+<li>*<em>CAM - VR Input *</em><br>
+<strong>Install :</strong>
+
+<ul>
+<li><strong>R20</strong> <em>(5k ohm)</em></li>
+</ul></li>
+</ul>
+
+<p><hr id="assembly_cht"></p>
+
+<h4>CHT circuit</h4>
+
+<p><strong>Step 19 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/inputs.png"><img src="img/inputs.png" width=337 height=260 title="CHT circuit components" alt="CHT circuit components">
+<div class=pict_title>CHT circuit components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li><strong>C33</strong> <em>(0.1µF)</em> located bottom center between R32 and D11.</li>
+<li><strong>C36</strong> <em>(1µF)</em> located bottom center between JP6 and D12.</li>
+<li><strong>R31</strong> <em>(2.49k ohm)</em> located bottom center between D12 and D10.</li>
+<li><strong>R32</strong> <em>(470 ohm)</em> located bottom center between D12 and C33.</li>
+<li><strong>D12</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the PCB. This is indicated by the white line.</li>
+<li><strong>D13</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the left edge of the PCB. This is indicated by the white line.</li>
+<li><strong>JP6</strong> This is just a wire jumper. You can use one of the diode leads that you snipped off for this jumper.</li>
+</ul>
+
+<p><hr id="assembly_mat"></p>
+
+<h4>MAT circuit</h4>
+
+<p><strong>Step 20 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/inputs.png"><img src="img/inputs.png" width=337 height=260 title="MAT circuit components" alt="MAT circuit components">
+<div class=pict_title>MAT circuit components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li><strong>C28</strong> <em>(0.1µF)</em> located bottom left center between R26 and C32.</li>
+<li><strong>C30</strong> <em>(1µF)</em> located lower left center between R13 and D9.</li>
+<li><strong>R24</strong> <em>(2.49k ohm)</em> located lower left center between D16 and R26.</li>
+<li><strong>R26</strong> <em>(470 ohm)</em> located lower left center between R24 and C28.</li>
+<li><strong>D8</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the PCB. This is indicated by the white line.</li>
+<li><strong>D9</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<p><hr id="assembly_iat"></p>
+
+<h4>IAT circuit</h4>
+
+<p><strong>Step 21 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/inputs.png"><img src="img/inputs.png" width=337 height=260 title="IAT circuit components" alt="IAT circuit components">
+<div class=pict_title>IAT circuit components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li><strong>C29</strong> <em>(0.1µF)</em> located bottom center between C31 and D31.</li>
+<li><strong>C31</strong> <em>(1µF)</em> located bottom center between C33 and C29.</li>
+<li><strong>R25</strong> <em>(2.49k ohm)</em> located bottom center between D12 and D11.</li>
+<li><strong>R27</strong> <em>(470 ohm)</em> located bottom center between D11 and C29.</li>
+<li><strong>D10</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the PCB. This is indicated by the white line.</li>
+<li><strong>D11</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the PCB. This is indicated by the white line.</li>
+<li><strong>JP5</strong> This is just a wire jumper. You can use one of the diode leads that you snipped off for this jumper.</li>
+</ul>
+
+<p><hr id="assembly_o2"></p>
+
+<h4>Wideband O2 lamba input circuit</h4>
+
+<p><strong>Step 22 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/inputs.png"><img src="img/inputs.png" width=337 height=260 title="Exhaust O2 circuit components" alt="Exhaust O2 circuit components">
+<div class=pict_title>Exhaust O2 circuit components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li><strong>C34</strong> <em>(0.1µF)</em> located bottom lower left between D17 and C35.</li>
+<li><strong>C38</strong> <em>(0.22µF)</em> located bottom lower left between D16 and D17.</li>
+<li><strong>R33</strong> <em>(470 ohm)</em> located bottom lower left between C38 and R34.</li>
+<li><strong>D16</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the right edge of the PCB. This is indicated by the white line.</li>
+<li><strong>D17</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the right edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<p><hr id="assembly_tps"></p>
+
+<h4>TPS circuit</h4>
+
+<p><strong>Step 23 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/inputs.png"><img src="img/inputs.png" width=337 height=260 title="TPS circuit components" alt="TPS circuit components">
+<div class=pict_title>TPS circuit components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li><strong>C35</strong> <em>(0.1µF)</em> located bottom lower left below C34.</li>
+<li><strong>C37</strong> <em>(0.22µF)</em> located bottom lower left between C35 and R34.</li>
+<li><strong>R34</strong> <em>(470 ohm)</em> located bottom lower left between C37 and D15.</li>
+<li><strong>D14</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom edge of the PCB. This is indicated by the white line.</li>
+<li><strong>D15</strong> <em>(1N5818-TP)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="serial_monitor.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_TH_Outputs.html">Next &gt;&gt;</a> </p></body>
+</html>
