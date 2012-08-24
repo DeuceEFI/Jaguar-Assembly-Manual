@@ -30,7 +30,7 @@ BRV-12v should be connected separately through a relay back to the battery to me
 ###Connect the following analog sensor connections to the Jaguar board:
 
 - **IAT**	Located in the upper middle section of the board near R27. This should be connected to the **TAN** wire on most GM vehicles.
-- **MAF**	Located in the upper middle section of the board near C28. This should be connected to the **YELLOW** wire on the MAF sensor on most GM vehicles.
+- **MAF**	Located in the upper middle section of the board near C28.
 - **CHT**	Located in the upper middle section of the board near R31. This should be connected to the **YELLOW** wire on the Coolant Temperature Sensor on most GM vehicles.
 - **O2**	Located in the upper right section of the board near R33. This should be connected to the analog linear output of your wideband O2 lamda sensor.
 - **TPS**	Located in the upper right section of the board near R34. This should be connected to the **DARK BLUE** wire on the TPS sender on most GM vehicles.
