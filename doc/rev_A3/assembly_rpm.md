@@ -19,25 +19,25 @@
 	- **D5**	*(Green LED)* Direction dependant, orient the **K** lead to the top edge of the board (towards R17). This is indicated by the short lead of the LED.   located top center above R11.   This is optional for diagnostics.
 
 **Step 17 :**
-- **CRANK - Hall/Opto/Digital RPM Input **<br>
+- **RPM0 - Hall/Opto/Digital RPM Input **<br>
 **Install :**
 	- **R22** 	*(1k ohm)*	
 
 **OR**
 
-- **CRANK - VR Input **<br>
+- **RPM0 - VR Input **<br>
 **Install :**
 	- **R23** 	*(5k ohm)*	
 	- **R19**	*(10k ohm)* located top center between C25 and C24.
 
 **Step 18 :**
-- **CAM - Hall/Opto/Digital RPM Input **<br>
+- **RPM1 - Hall/Opto/Digital RPM Input **<br>
 **Install :**
 	- **R21** 	*(1k ohm)*	
 
 **OR**
 
-- **CAM - VR Input **<br>
+- **RPM1 - VR Input **<br>
 **Install :**
 	- **R20** 	*(5k ohm)*
 	- **R16**	*(10k ohm)* located top center between R17 and C25.
