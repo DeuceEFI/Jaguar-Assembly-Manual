@@ -10,8 +10,8 @@
 - **JP2**	*(3 pin 0.100" header strip)* for selecting inverted or non-inverted output.
 - **JP7**	*(wire jumper)*  Install a wire jumper between these pads for normal operation.
 - **JP8**	*(wire jumper)*  Install a wire jumper between these pads for normal operation.
-- **U5**	*(74HC86 XOR Gate)*
+- **U5**	*(CD74AC86E XOR Gate)*
 
 JP7 and JP8 are there if someone wants to use MCU pins other than Port T0 (JP7) and Port T1 (JP8) with the XOR I/O circuits or to use another output circuit.
 
-
+The exclusive-OR gate specified in the Bill of Materials is ONLY to be used as logic level outputs to the logic level inputs on EDIS/DIS modules! 
