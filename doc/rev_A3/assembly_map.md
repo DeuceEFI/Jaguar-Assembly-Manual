@@ -9,4 +9,6 @@
 - **R13**	*(1k ohm)* located left center between C20 and D16. 
 - **U6**	*(MPX4100AP)* for normally aspirated version, if for boosted application use MPX4250AP instead.
 
+Use needlenose pliers to bend the leads of the MAP sensor approximately 1mm away from the body of the sensor, make sure to bend the leads so they face away from the part number etched into the body of the MAP sensor as shown in the picture above.
+
 
