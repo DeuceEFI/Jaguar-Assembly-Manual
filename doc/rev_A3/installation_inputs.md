@@ -50,5 +50,5 @@ BRV-12v should be connected separately through a relay back to the battery to me
 - **Crank-Shield**	Located in the bottom right section of the board near R12.  This should be connected to the shield of the wiring for the Crankshaft VR input sensor.
 
 
-**Verify all the analog sensor inputs are functioning properly by opening MTX and observing the analog sensor input values.**
+**Verify all the analog sensor inputs are functioning properly by opening EMStudio or MegaTunix and observing the analog sensor input values.**
 

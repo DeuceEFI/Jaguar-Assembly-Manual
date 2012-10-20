@@ -26,8 +26,6 @@ structure:
     - assembly_PS # instructions to assemble the power supplies
   - assembly_MCU_components:
     - assembly_MCU_components # instructions to assemble MCU supporting components
-  - serial_monitor:
-    - sm_install # how to load the serial monitor using BDM
   - assembly_TH_Inputs:
     - assembly_brv
     - assembly_map
@@ -43,12 +41,10 @@ structure:
     - assembly_injection
   - assembly_pin_strips:
     - assembly_pinstrips
-  - firmware:
-    - firmware_upload # how to upload the FreeEMS firmware to the board
   - testing_inputs:
     - testing_inputs
-  - testing_outputs:
-    - testing_outputs
+  - secure_components:
+    - secure_components
   - installation:
     - installation_overview # how to install the Jaguar Revision A3 PCB
     - installation_inputs # how to connect your inputs to the Jaguar Revision A3 PCB

@@ -18,12 +18,13 @@
 
 <p>It is assumed that you came to this guide from one of the main sites, if not, see the <a href="http://forum.diyefi.org/viewforum.php?f=67">Jaguar</a> forum for more specific information on this design.</p>
 
-<p>This version of the manual includes instructions for the <strong>Jaguar Revision A3 board</strong>, which was produced as a small one-off run of just 5 bare PCBs by Andy Goss. </p>
+<p>The goal of the Jaguar project is to create a hardware solution for FreeEMS that caters to the needs of the General Motors 4/6/8 cylinder engines running either an electronic advance distributor or wasted spark DIS system. The Jaguar board can also be used for other 4/6/8 cylinder engines using a Ford EDIS ignition system. The exclusive-OR gate specified in the Bill of Materials and in these assembly instructions is ONLY to be used as logic level outputs to the logic level inputs on EDIS/DIS modules! </p>
+
+<p>This version of the manual includes instructions for the <strong>Jaguar Revision A3 board</strong>, which was produced as a small run of just 5 bare PCBs by Andy Goss in March 2012. </p>
 
 <ul>
 <li>You will need to purchase parts required for your build, these are listed in <a href="materials.html#using_bom">the BOM</a> then install those parts.</li>
-<li>Then you will also need to program the Serial Monitor via the BDM programming port to get a functional boot loader installed.</li>
-<li>After the Serial Monitor is flashed with the BDM, the board can be programmed via a USB connection to your computer.</li>
+<li>The board can be programmed via a USB connection to your computer.</li>
 </ul>
 
 <p>Click on any image to view it full size.</p>
@@ -41,13 +42,11 @@
 <li><a href="reflow.html#pcb_bake">Baking the Assembled PCB</a></li>
 <li><a href="assembly_PowerSupplies.html#assembly_PS">Assembling the PCB - Power Supplies</a></li>
 <li><a href="assembly_MCU_components.html#assembly_MCU_components">Assembling the PCB - MCU/USB Components</a></li>
-<li><a href="serial_monitor.html#sm_install">Installing the Serial Monitor</a></li>
 <li><a href="assembly_TH_Inputs.html#assembly_brv">Assembling the PCB - Analog Inputs</a></li>
 <li><a href="assembly_TH_Outputs.html#assembly_ignition">Assembling the PCB - Outputs</a></li>
 <li><a href="assembly_pin_strips.html#assembly_pinstrips">Assembling the PCB - Optional Pin Strips</a></li>
-<li><a href="firmware.html#firmware_upload">Loading Firmware</a></li>
 <li><a href="testing_inputs.html#testing_inputs">Testing Inputs</a></li>
-<li><a href="testing_outputs.html#testing_outputs">Testing Outputs</a></li>
+<li><a href="secure_components.html#secure_components">Secure Upright Components</a></li>
 <li><a href="installation.html#installation_overview">Installation Overview</a></li>
 <li><a href="installation.html#installation_inputs">Installation Inputs</a></li>
 <li><a href="installation.html#installation_outputs">Installation Outputs</a></li>
