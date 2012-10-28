@@ -4,8 +4,8 @@
 *Only perform either the Hall/Opto/Digital* **OR** *the VR Input Sections but not both.*
 
 - **Install Common RPM Components**
-	- **C24**	*(1nF)* located top center between R19 and R18. - ONLY IF NEEDED
-	- **C25**	*(1nF)* located top center between R16 and R19. - ONLY IF NEEDED
+	- **C24**	*(1nF)* located top center between R19 and R18.
+	- **C25**	*(1nF)* located top center between R16 and R19.
 	- **C26**	*(0.1µF)* located top center between C42 and C43.
 	- **C42**	*(10nF)* located top center between R19 and C26.
 	- **C43**	*(1µF)* located top center between C26 and R18.
