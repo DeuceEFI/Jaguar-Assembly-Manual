@@ -85,7 +85,14 @@
 
 <h1>Outputs</h1>
 
-<h2>Ignition System</h2>
+<h2>GM DIS/HEI Ignition System</h2>
+
+<h3>JP1 and JP2 settings:</h3>
+
+<ul>
+<li><strong>JP1</strong> Install jumper so that the middle pin and the pin closest to R35 is jumpered together (ie: grounded)</li>
+<li><strong>JP2</strong> Install jumper so that the middle pin and the pin closest to the end of the PCB is jumpered together (ie: grounded)</li>
+</ul>
 
 <h3>Connect the following ignition system connections to the Jaguar board:</h3>
 
@@ -96,19 +103,25 @@
 
 <h2>Fuel, Fan and Accessory Outputs</h2>
 
-<h3>Fuel Pump Relay</h3>
+<h3>Fuel Pump Low Side Driver</h3>
+
+<p>This is the only Low Side Driver that is connected to an MCU output.</p>
 
 <ul>
 <li><strong>Fuel-</strong> Located in the upper left section of the board between C29 and D30. This should be connected to the <strong>GREEN/WHITE</strong> wire that controls the Fuel Pump Relay on most GM vehicles.</li>
 </ul>
 
-<h3>Fan Relay</h3>
+<h3>Fan Low Side Driver</h3>
+
+<p>This Low Side Driver is NOT connected to an MCU output.</p>
 
 <ul>
 <li><strong>FAN-</strong> Located in the upper left section of the board between R73 and R74. This should be connected to the negative wire that controls the radiator cooling Fan Relay. This can also be used to supply a pulse width modulated input to a variable speed fan controller that you supply external to the Jaguar board. See the <a href="http://forum.diyefi.org/viewforum.php?f=67">Jaguar</a> forum for more details.</li>
 </ul>
 
-<h3>Accessory Relay</h3>
+<h3>Accessory Low Side Driver</h3>
+
+<p>This Low Side Driver is NOT connected to an MCU output.</p>
 
 <ul>
 <li><strong>ACC-</strong> Located in the upper left section of the board between D42 and R76. This should be connected to the negative wire that controls an Accessory Relay, if needed for your application.</li>
