@@ -45,6 +45,8 @@ structure:
     - testing_inputs
   - secure_components:
     - secure_components
+  - assembly_complete:
+    - assembly_complete
   - installation:
     - installation_overview # how to install the Jaguar Revision A3 PCB
     - installation_inputs # how to connect your inputs to the Jaguar Revision A3 PCB

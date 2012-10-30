@@ -13,6 +13,7 @@
   * [Assembling the PCB - Optional Pin Strips](#assembly_pinstrips)
   * [Testing Inputs](#testing_inputs)
   * [Secure Upright Components](#secure_components)
+  * [Assembly Complete](#assembly_complete)
   * [Installation Overview](#installation_overview)
   * [Installation Inputs](#installation_inputs)
   * [Installation Outputs](#installation_outputs)
