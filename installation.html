@@ -133,6 +133,8 @@
 
 <h2>Injector Outputs</h2>
 
+<h3>For 4 cylinder engine sequential injection</h3>
+
 <h4>Configure MCU Outputs to Injector MOSFET inputs</h4>
 
 <div class=imagebox style="min-height:280px">
@@ -144,9 +146,14 @@
 
 <p></div></p>
 
-<h3>For 4 cylinder engine</h3>
+<ul>
+<li>Jumper from (Port T4) P20 pin 1 to P34 Pin 1</li>
+<li>Jumper from (Port T5) P20 pin 2 to P34 Pin 2</li>
+<li>Jumper from (Port T6) P20 pin 3 to P34 Pin 3</li>
+<li>Jumper from (Port T7) P20 pin 4 to P34 Pin 4</li>
+</ul>
 
-<h4>Connnect Injectors to Injector MOSFETs</h4>
+<h4>Connect Injectors to Injector MOSFETs</h4>
 
 <div class=imagebox style="min-height:592px">
 <a class=pict href="img/p26.png"><img src="img/p26.png" width=312 height=572 title="4 cylinder sequential injection" alt="4 cylinder sequential injection">
@@ -157,7 +164,33 @@
 
 <p></div></p>
 
-<h3>For 6 cylinder engine</h3>
+<p>The injector numbers listed below are the actual firing order, for example, if your engine firing order is 1-3-4-2 you would connect:</p>
+
+<ul>
+<li>the injector for cylinder #1 to P26 pin 1 (injector #1)</li>
+<li>the injector for cylinder #3 to P26 pin 2 (injector #2)</li>
+<li>the injector for cylinder #4 to P26 pin 3 (injector #3)</li>
+<li>the injector for cylinder #2 to P26 pin 4 (injector #4)</li>
+</ul>
+
+<h3>For 6 cylinder engine semi-sequential injection</h3>
+
+<h4>Configure MCU Outputs to Injector MOSFET inputs</h4>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/mcu_outputs.png"><img src="img/mcu_outputs.png" width=337 height=260 title="MCU Outputs to Injection inputs" alt="MCU Outputs to Injection inputs">
+<div class=pict_title>MCU Outputs to Injection inputs
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li>Jumper from (Port T4) P20 pin 1 to P21 Pin 1</li>
+<li>Jumper from (Port T5) P20 pin 2 to P21 Pin 2</li>
+<li>Jumper from (Port T6) P20 pin 3 to P21 Pin 3</li>
+</ul>
 
 <h4>Configure MCU Outputs to Injector MOSFETs</h4>
 
@@ -170,7 +203,13 @@
 
 <p></div></p>
 
-<h4>Connnect Injectors to Injector MOSFETs</h4>
+<ul>
+<li>Jumper from P34 pin 1 to P34 Pin 2 --This allows Q1 and Q2 to be driven by Port T4</li>
+<li>Jumper from P34 pin 3 to P34 Pin 4 --This allows Q3 and Q4 to be driven by Port T5</li>
+<li>Jumper from P34 pin 5 to P34 Pin 6 --This allows Q5 and Q6 to be driven by Port T6</li>
+</ul>
+
+<h4>Connect Injectors to Injector MOSFETs</h4>
 
 <div class=imagebox style="min-height:592px">
 <a class=pict href="img/p26.png"><img src="img/p26.png" width=312 height=572 title="6 cylinder injection" alt="6 cylinder injection">
@@ -181,7 +220,36 @@
 
 <p></div></p>
 
-<h3>For 8 cylinder engine</h3>
+<p>The injector numbers listed below are the actual firing order, for example, if your engine firing order is 1-6-5-4-3-2 you would connect:</p>
+
+<ul>
+<li>the injector for cylinder #1 to P26 pin 1 (injector #1)</li>
+<li>the injector for cylinder #6 to P26 pin 2 (injector #2)</li>
+<li>the injector for cylinder #5 to P26 pin 3 (injector #3)</li>
+<li>the injector for cylinder #4 to P26 pin 4 (injector #4)</li>
+<li>the injector for cylinder #3 to P26 pin 5 (injector #5)</li>
+<li>the injector for cylinder #2 to P26 pin 6 (injector #6)</li>
+</ul>
+
+<h3>For 8 cylinder engine semi-sequential injection</h3>
+
+<h4>Configure MCU Outputs to Injector MOSFET inputs</h4>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/mcu_outputs.png"><img src="img/mcu_outputs.png" width=337 height=260 title="MCU Outputs to Injection inputs" alt="MCU Outputs to Injection inputs">
+<div class=pict_title>MCU Outputs to Injection inputs
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li>Jumper from (Port T4) P20 pin 1 to P34 Pin 1</li>
+<li>Jumper from (Port T5) P20 pin 2 to P34 Pin 2</li>
+<li>Jumper from (Port T6) P20 pin 3 to P34 Pin 3</li>
+<li>Jumper from (Port T7) P20 pin 4 to P34 Pin 4</li>
+</ul>
 
 <h4>Configure MCU Outputs to Injector MOSFETs</h4>
 
@@ -194,7 +262,14 @@
 
 <p></div></p>
 
-<h4>Connnect Injectors to Injector MOSFETs</h4>
+<ul>
+<li>Jumper from P34 pin 1 to P34 Pin 2 --This allows Q1 and Q2 to be driven by Port T4</li>
+<li>Jumper from P34 pin 3 to P34 Pin 4 --This allows Q3 and Q4 to be driven by Port T5</li>
+<li>Jumper from P34 pin 5 to P34 Pin 6 --This allows Q5 and Q6 to be driven by Port T6</li>
+<li>Jumper from P34 pin 7 to P34 Pin 8 --This allows Q7 and Q8 to be driven by Port T7</li>
+</ul>
+
+<h4>Connect Injectors to Injector MOSFETs</h4>
 
 <div class=imagebox style="min-height:592px">
 <a class=pict href="img/p26.png"><img src="img/p26.png" width=312 height=572 title="8 cylinder injection" alt="8 cylinder injection">
@@ -204,6 +279,19 @@
 <p></a></p>
 
 <p></div></p>
+
+<p>The injector numbers listed below are the actual firing order, for example, if your engine firing order is 1-8-4-3-6-5-7-2 you would connect:</p>
+
+<ul>
+<li>the injector for cylinder #1 to P26 pin 1 (injector #1)</li>
+<li>the injector for cylinder #8 to P26 pin 2 (injector #2)</li>
+<li>the injector for cylinder #4 to P26 pin 3 (injector #3)</li>
+<li>the injector for cylinder #3 to P26 pin 4 (injector #4)</li>
+<li>the injector for cylinder #6 to P26 pin 5 (injector #5)</li>
+<li>the injector for cylinder #5 to P26 pin 6 (injector #6)</li>
+<li>the injector for cylinder #7 to P26 pin 5 (injector #7)</li>
+<li>the injector for cylinder #2 to P26 pin 6 (injector #8)</li>
+</ul>
 
 <p>**To configure your freshly installed FreeEMS-powered system, read this <a href="http://forum.diyefi.org/viewtopic.php?f=54&amp;t=1166">thread</a> and all of the linked threads.</p>
 
