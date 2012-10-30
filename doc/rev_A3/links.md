@@ -8,7 +8,7 @@
 [Digikey]: http://www.digikey.com/
 [BOM Here]: https://github.com/DeuceEFI/Jaguar/blob/master/docs/Jaguar.ods
 [BOM]: https://github.com/DeuceEFI/Jaguar/blob/master/docs/
-[Schematics]: https://github.com/DeuceEFI/Jaguar/docs/Jaguar-Schematic.pdf
+[Schematics]: https://github.com/DeuceEFI/Jaguar/blob/master/docs/Jaguar-Schematic.pdf
 [schematic and circuitry]: https://github.com/DeuceEFI/Jaguar/blob/master/docs/Jaguar-Schematic.pdf
 [clone Jaguar]: https://github.com/DeuceEFI/Jaguar
 [CodeWarrior]: http://www.freescale.com/
