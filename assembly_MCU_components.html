@@ -85,10 +85,65 @@
 <li><p><strong>R57</strong> <em>(470 ohm)</em> located near the top left of the board above D33.</p></li>
 <li><p><strong>R58</strong> <em>(470 ohm)</em> located near the top left of the board above D34.</p></li>
 <li><p><strong>R79</strong> <em>(22 ohm or Ferrite Bead)</em> located near the top left of the board between J1 and U6.</p></li>
-<li><p>Install a jumper wire from <strong>RX</strong> (one of the R60 pads) to <strong>RXB</strong> (near C21). This bypasses the optocoupler circuit.</p></li>
-<li><p>Install a jumper wire from <strong>TX</strong> (near R60) to <strong>TXB</strong> (near C40). This bypasses the optocoupler circuit.</p></li>
 <li><p>Install either <strong>J1</strong> <em>(USB-B)</em> or <strong>J2</strong> <em>(USB-B Micro)</em> but <strong>NOT</strong> both!</p></li>
 </ul>
+
+<p>Next do either <strong>A</strong> or <strong>B</strong> but <strong>NOT</strong> both! To be clear, <strong>either</strong> install the digital isolator <strong>or</strong> bypass the optocoupler circuits, but do not do both.</p>
+
+<p><strong>A) To install an Analog Devices ADUMx201 or Texas Instruments ISO7421 digital isolator:</strong>
+- <strong>U9</strong> <em>(ADUMx201/ISO7421)</em> located to the right of the U1. Pin 1 on the device goes to Pin 1 on the PCB.
+- <strong>Jumper</strong> <em>(Jumper Wire)</em> between pin 1 of U9 to R60 pad directly across from U9 pin 1.
+- <strong>Jumper</strong> <em>(Jumper Wire)</em> between pin 2 of U9 to R60 pad closest to C44.
+- <strong>Jumper</strong> <em>(Jumper Wire)</em> between pin 4 of U9 to either pad between C44 and C4.
+- <strong>Jumper</strong> <em>(Jumper Wire)</em> between pin 7 of U9 to the RXB pad.
+- <strong>Jumper</strong> <em>(Jumper Wire)</em> between pin 8 of U9 to R56 pad closest to C39.</p>
+
+<p><strong>B) To bypass the optocoupler circuits:</strong>
+- Install a jumper wire from <strong>RX</strong> (one of the R60 pads) to <strong>RXB</strong> (near C21). This bypasses the optocoupler circuit.
+- Install a jumper wire from <strong>TX</strong> (near R60) to <strong>TXB</strong> (near C40). This bypasses the optocoupler circuit.</p>
+
+<p>If you have the <strong>original</strong> FreeEMS serial monitor program (included with the freeems-vanilla firmware) you will need the PNP transistor modification shown here, <strong>HOWEVER</strong> if you have the modified &quot;<strong>seank.hackers.special.by.fred.s19</strong>&quot; serial monitor program you <strong>DO NOT</strong> need the PNP modification:</p>
+
+<p>Install the PNP transistor modification to allow the MCU to operate without the USB cable being plugged in and connected to a computer:
+- <strong>Jumper</strong> <em>(Jumper Wire)</em> between U9 pin 5 to U8 pin 5.
+- <strong>PNP</strong> <em>(2N3906)</em> Connect Emitter to R60 pad directly across from U9 Pin 1, connect Collector to U8 pin 6, connect Base to R56 pad closest to C39.</p>
+
+<p><hr id="firmware_upload"></p>
+
+<h2>Uploading the firmware</h2>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/operation/FreeEMS_loader_settings.png"><img src="img/operation/FreeEMS_loader_settings.png" width=337 height=260 title="FreeEMS Loader Application" alt="FreeEMS Loader Application">
+<div class=pict_title>FreeEMS Loader Application
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/operation/FreeEMS_loader_advanced.png"><img src="img/operation/FreeEMS_loader_advanced.png" width=337 height=260 title="Communication settings" alt="Communication settings">
+<div class=pict_title>Communication settings
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<h4>You will use the above procedure to load different FreeEMS firmware from this point forward.</h4>
+
+<h4>You may also use the <a href="https://github.com/djandruczyk/MegaTunix">MegaTunix</a> Firmware Loader to load the FreeEMS firmware if you prefer.</h4>
+
+<h2>Verifying correct operation of the firmware</h2>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/operation/CuteComDataStreaming.png"><img src="img/operation/CuteComDataStreaming.png" width=337 height=260 title="CuteCom streaming FreeEMS data logs" alt="CuteCom streaming FreeEMS data logs">
+<div class=pict_title>CuteCom streaming FreeEMS data logs
+</div>
+
+<p></a></p>
+
+<p></div></p>
 
 <p><hr id="links"></p>
 
