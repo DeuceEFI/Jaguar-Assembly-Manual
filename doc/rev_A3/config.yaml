@@ -26,6 +26,7 @@ structure:
     - assembly_PS # instructions to assemble the power supplies
   - assembly_MCU_components:
     - assembly_MCU_components # instructions to assemble MCU supporting components
+    - firmware_upload # instructions on how to test the USB communications
   - assembly_TH_Inputs:
     - assembly_brv
     - assembly_map

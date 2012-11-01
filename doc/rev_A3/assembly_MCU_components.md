@@ -52,9 +52,27 @@ These are the necessary components for the USB to MCU communications to function
 - **R57**	*(470 ohm)* located near the top left of the board above D33.
 - **R58**	*(470 ohm)* located near the top left of the board above D34.
 - **R79**	*(22 ohm or Ferrite Bead)* located near the top left of the board between J1 and U6.
-- Install a jumper wire from **RX** (one of the R60 pads) to **RXB** (near C21).  This bypasses the optocoupler circuit.
-- Install a jumper wire from **TX** (near R60) to **TXB** (near C40).  This bypasses the optocoupler circuit.
 
 - Install either **J1**	*(USB-B)* or **J2** *(USB-B Micro)* but **NOT** both!
 
+Next do either **A** or **B** but **NOT** both!  To be clear, **either** install the digital isolator **or** bypass the optocoupler circuits, but do not do both.
+
+**A) To install an Analog Devices ADUMx201 or Texas Instruments ISO7421 digital isolator:**
+- **U9**	*(ADUMx201/ISO7421)* located to the right of the U1. Pin 1 on the device goes to Pin 1 on the PCB.
+- **Jumper**	*(Jumper Wire)* between pin 1 of U9 to R60 pad directly across from U9 pin 1.
+- **Jumper**	*(Jumper Wire)* between pin 2 of U9 to R60 pad closest to C44.
+- **Jumper**	*(Jumper Wire)* between pin 4 of U9 to either pad between C44 and C4.
+- **Jumper**	*(Jumper Wire)* between pin 7 of U9 to the RXB pad.
+- **Jumper**	*(Jumper Wire)* between pin 8 of U9 to R56 pad closest to C39.
+
+
+**B) To bypass the optocoupler circuits:**
+- Install a jumper wire from **RX** (one of the R60 pads) to **RXB** (near C21).  This bypasses the optocoupler circuit.
+- Install a jumper wire from **TX** (near R60) to **TXB** (near C40).  This bypasses the optocoupler circuit.
+
+If you have the **original** FreeEMS serial monitor program (included with the freeems-vanilla firmware) you will need the PNP transistor modification shown here, **HOWEVER** if you have the modified "**seank.hackers.special.by.fred.s19**" serial monitor program you **DO NOT** need the PNP modification:
+
+Install the PNP transistor modification to allow the MCU to operate without the USB cable being plugged in and connected to a computer:
+- **Jumper**	*(Jumper Wire)* between U9 pin 5 to U8 pin 5.
+- **PNP**	*(2N3906)* Connect Emitter to R60 pad directly across from U9 Pin 1, connect Collector to U8 pin 6, connect Base to R56 pad closest to C39.
 
