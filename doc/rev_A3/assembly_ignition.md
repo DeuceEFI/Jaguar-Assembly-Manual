@@ -12,6 +12,8 @@
 - **JP8**	*(wire jumper)*  Install a wire jumper between these pads for normal operation.
 - **U5**	*(CD74AC86E XOR Gate)*
 
+I recommend using an IC socket to install U5 that way if you need to replace the XOR you will be able to without de-soldering/re-soldering.
+
 JP7 and JP8 are there if someone wants to use MCU pins other than Port T2 (JP7) and Port T3 (JP8) with the XOR I/O circuits or to use another output circuit.
 
 The exclusive-OR gate specified in the Bill of Materials is ONLY to be used as logic level outputs to the logic level inputs on EDIS/DIS modules! 
