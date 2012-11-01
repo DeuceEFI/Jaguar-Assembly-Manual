@@ -42,12 +42,12 @@ BRV-12v should be connected separately through a relay back to the battery to me
 ###Connect the following RPM/Position sensor connections to the Jaguar board:
 
 - **CAM+**	Located in the bottom right section of the board near R20. This should be connected to the **BLACK** wire on most GM vehicles that use a Hall Effect sensor.  If you are using a VR input connect the Camshaft **+** VR input here.
-- **CAM-**	Located in the bottom right section of the board near R20.  This should not be connected on GM vehicles that use Hall Effect Camshaft position sensors.  If Hall Effect sensors, Optical sensors or digital sensors are used to not connect anything to this pad.  It is only used for a Camshaft **-** VR input.
-- **CAM-Shield**	Located in the bottom right section of the board near R57.  This should be connected to the shield of the wiring for the Camshaft VR input sensor.
+- **CAM-**	Located in the bottom right section of the board near R20.  This should be connected to one of the ground or shield pads for GM vehicles that use Hall Effect, optical or digital sensor Camshaft position sensors.
+- **CAM-Shield**	Located in the bottom right section of the board near R57.  This should be connected to the shield of the wiring for the Camshaft input sensor.
 
 - **CRANK+**	Located in the bottom right section of the board near R23. This should be connected to the **BLACK** wire on most GM vehicles that use a Hall Effect sensor.  If you are using a VR input connect the Crankshaft **+** VR input here.
-- **CRANK-**	Located in the bottom right section of the board near R19.  This should not be connected on GM vehicles that use Hall Effect Crankshaft position sensors.  If Hall Effect sensors, Optical sensors or digital sensors are used to not connect anything to this pad.  It is only used for a Crankshaft **-** VR input.
-- **Crank-Shield**	Located in the bottom right section of the board near R12.  This should be connected to the shield of the wiring for the Crankshaft VR input sensor.
+- **CRANK-**	Located in the bottom right section of the board near R19.  This should be connected to one of the ground or shield pads for GM vehicles that use Hall Effect, optical sensors or digital sensor Crankshaft position sensors.
+- **Crank-Shield**	Located in the bottom right section of the board near R12.  This should be connected to the shield of the wiring for the Crankshaft input sensor.
 
 
 **Verify all the analog sensor inputs are functioning properly by opening EMStudio or MegaTunix and observing the analog sensor input values.**
