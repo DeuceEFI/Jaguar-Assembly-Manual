@@ -21,7 +21,10 @@
 **Install :**
 	- **R18**	*(1k ohm)* located top center between C43 and R12.
 	- **R19**	*(1k ohm)* located top center between C25 and C24.
-	- **R22** 	*(1k ohm)*	
+	- **R22** 	*(1k ohm)*
+        - **R83**	*(1k ohm)* Connect one lead of this resistor to the R19 pad closest to U4 and the other lead to the row of pads that join C26, C42, C43 that are closest to C24.
+	- **Jumper**	*(wire)* Connect a jumper wire from CRANK- to one of the Ground or Shield pads.	
+	- **R23** 	*(0.1 uF)* Install a capacitor in this position ONLY IF you are having sync issues.
 
 **OR**
 
@@ -36,7 +39,10 @@
 **Install :**
 	- **R16**	*(1k ohm)* located top center between R17 and C25.
 	- **R17**	*(1k ohm)* located top center between JP10 and R16.
-	- **R21** 	*(1k ohm)*	
+	- **R21** 	*(1k ohm)*
+        - **R84**	*(1k ohm)* Connect one lead of this resistor to the R16 pad closest to U4 and the other lead to the row of pads that join C26, C42, C43 that are closest to C24.	
+	- **Jumper**	*(wire)* Connect a jumper wire from CAM- to one of the Ground or Shield pads.	
+	- **R20** 	*(0.1 uF)* Install a capacitor in this position ONLY IF you are having sync issues.
 
 **OR**
 
