@@ -112,6 +112,8 @@
 
 <h2>Uploading the firmware</h2>
 
+<p><strong>Step 13 :</strong></p>
+
 <div class=imagebox style="min-height:280px">
 <a class=pict href="img/operation/FreeEMS_loader_settings.png"><img src="img/operation/FreeEMS_loader_settings.png" width=337 height=260 title="FreeEMS Loader Application" alt="FreeEMS Loader Application">
 <div class=pict_title>FreeEMS Loader Application
@@ -121,6 +123,17 @@
 
 <p></div></p>
 
+<ul>
+<li>These are the communications settings for the FreeEMS firmware:
+
+<ul>
+<li><strong>Baud rate</strong>: 115200</li>
+<li><strong>Data bits</strong>: 8</li>
+<li><strong>Stop bits</strong>: 1</li>
+<li><strong>Parity</strong>: ODD</li>
+</ul></li>
+</ul>
+
 <div class=imagebox style="min-height:280px">
 <a class=pict href="img/operation/FreeEMS_loader_advanced.png"><img src="img/operation/FreeEMS_loader_advanced.png" width=337 height=260 title="Communication settings" alt="Communication settings">
 <div class=pict_title>Communication settings
@@ -129,6 +142,24 @@
 <p></a></p>
 
 <p></div></p>
+
+<ol>
+<li>Install <a href="https://github.com/seank/freeems-loader">Seans loader</a> or <a href="https://github.com/djandruczyk/MegaTunix">MegaTunix</a>, these instructions are for Seans loader.</li>
+<li>Connect a USB cable between your computer and the Jaguar board.</li>
+<li>Jumper the load/run header.</li>
+<li>Turn the power supply to the Jaguar board <strong>on</strong>.</li>
+<li>Select the device <code>/dev/ttyUSB[n]</code> in Unix-like operating systems and <code>COM[n]</code> on Windows. Where
+<code>[n]</code> is the port number e.g.: <code>/dev/ttyUSB0</code> or <code>COM3</code></li>
+<li>Press the &quot;<strong>Connect</strong>&quot; button.</li>
+<li>Press the &quot;<strong>Load</strong>&quot; button.</li>
+<li>Choose a recent s19 of the Bench Test firmware variant.</li>
+<li>Wait until the erasing and programming phases are done.</li>
+<li>Press the &quot;<strong>Close/reset</strong>&quot; button.</li>
+<li>Remove the load/run jumper.</li>
+<li>Power cycle the Jaguar board.</li>
+</ol>
+
+<p><em>The FreeEMS Bench Test firmware is now be installed on your Jaguar board.</em></p>
 
 <h4>You will use the above procedure to load different FreeEMS firmware from this point forward.</h4>
 
@@ -144,6 +175,21 @@
 <p></a></p>
 
 <p></div></p>
+
+<ol>
+<li>Connect CuteCom with the correct settings and hex mode on.</li>
+<li>Verify that data is streaming past at a high rate.</li>
+<li>Send the stop data logging (update.block.with.datalog.stream.type.0x00-OFF.bin) packet from the Freeems-vanilla firmware lib directory and ensure that the stream stops.</li>
+<li>Clear the text area and turn off hex mode.</li>
+<li>Send the following test packets and record the returned strings;
+
+<ul>
+<li>Get firmware version; (request.firmware.version.bin).</li>
+<li>Get interface version; (request.interface.version.bin).</li>
+<li>Get decoder version; (request.decoder.name.bin).</li>
+</ul></li>
+<li>Ensure that the strings returned match what you uploaded.</li>
+</ol>
 
 <p><hr id="links"></p>
 
