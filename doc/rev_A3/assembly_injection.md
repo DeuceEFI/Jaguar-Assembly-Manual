@@ -29,7 +29,7 @@
 - **R36**	*(100k ohm)*
 - **D19**	*(LED Red)* Direction dependant, orient the **K** lead to the top edge of the board. This is indicated by the short lead of the LED.
 - **D25**	*(1N4148)* Direction dependant, orient the **K** lead to the bottom edge of the PCB.  This is indicated by the white line.
---/
+
 #### Injector 3
 **Step 33 :**
 
@@ -38,7 +38,7 @@
 - **R37**	*(100k ohm)*
 - **D20**	*(LED Red)* Direction dependant, orient the **K** lead to the top edge of the board. This is indicated by the short lead of the LED.
 - **D26**	*(1N4148)* Direction dependant, orient the **K** lead to the bottom edge of the PCB.  This is indicated by the white line.
---/
+
 
 #### Injector 4
 **Step 34 :**
@@ -48,7 +48,7 @@
 - **R38**	*(100k ohm)*
 - **D21**	*(LED Red)* Direction dependant, orient the **K** lead to the top edge of the board. This is indicated by the short lead of the LED.
 - **D27**	*(1N4148)* Direction dependant, orient the **K** lead to the bottom edge of the PCB.  This is indicated by the white line.
---/
+
 
 #### Injector 5
 **Step 35 :**
@@ -58,7 +58,7 @@
 - **R39**	*(100k ohm)*
 - **D22**	*(LED Red)* Direction dependant, orient the **K** lead to the top edge of the board. This is indicated by the short lead of the LED.
 - **D28**	*(1N4148)* Direction dependant, orient the **K** lead to the top edge of the PCB.  This is indicated by the white line.
---/
+
 
 #### Injector 6
 **Step 36 :**
@@ -68,7 +68,7 @@
 - **R40**	*(100k ohm)*
 - **D23**	*(LED Red)* Direction dependant, orient the **K** lead to the top edge of the board. This is indicated by the short lead of the LED.
 - **D29**	*(1N4148)* Direction dependant, orient the **K** lead to the top edge of the PCB.  This is indicated by the white line.
---/
+
 
 #### Injector 7
 **Step 37 :**
@@ -78,7 +78,7 @@
 - **R68**	*(100k ohm)*
 - **D35**	*(LED Red)* Direction dependant, orient the **K** lead to the top edge of the board. This is indicated by the short lead of the LED.
 - **D37**	*(1N4148)* Direction dependant, orient the **K** lead to the top edge of the PCB.  This is indicated by the white line.
---/
+
 
 #### Injector 8
 **Step 38 :**
@@ -88,4 +88,4 @@
 - **R69**	*(100k ohm)*
 - **D36**	*(LED Red)* Direction dependant, orient the **K** lead to the top edge of the board. This is indicated by the short lead of the LED.
 - **D38**	*(1N4148)* Direction dependant, orient the **K** lead to the top edge of the PCB.  This is indicated by the white line.
---/
+
