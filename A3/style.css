@@ -12,6 +12,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
+h0 {
+  padding-top: 18px;
+  font-size: 34px;
+}
 h1 {
   padding-top: 16px;
   font-size: 32px;
