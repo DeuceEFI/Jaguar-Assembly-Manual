@@ -1,12 +1,12 @@
 ## Power Supplies
 
-Orient the Jaguar Revision A3 board so that the U6 (MPX4100AP) silk screen is located to the left side and U3 will be in the upper left corner.  You should not see any of the SMD components, they should be on the back side of the board.  For the remainder of the assembly manual this will be how the Jaguar board should be oriented to install the through hole components.
+Orient the Jaguar version 0.6-alpha board so that the U6 (MPX4250AC6U) silk screen is located to the left side and U3 will be in the upper left corner.  You should not see any of the SMD components, they should be on the back side of the board.  For the remainder of the assembly manual this will be how the Jaguar board should be oriented to install the through hole components.
 
 #### Install MCU Power Supply components
 **Step 7 :** 
 /-- 337x260 img/mcu_power_supply.png "Install MCU power supply components" --/
 
- 1. **U3** *(LM2937ET-5.0)* Install this component from the Through Hole side with the heatsink facing away from the center of the board.
+ 1. **U3** *(LM2940ET-5.0)* Install this component from the Through Hole side with the heatsink facing away from the center of the board.
  2. **C15** *(0.1µF)* 
  3. **C17** *(0.1µF)* 
  4. **C13** *(10µF)* Polarised tantalum capacitor; Make sure that it is oriented so that the positive lead is towards the bottom of the board.
@@ -25,7 +25,7 @@ Orient the Jaguar Revision A3 board so that the U6 (MPX4100AP) silk screen is lo
  3. Set your DMM to measure 20v DC.
  4. Connect the negative (-) lead from your DMM to the ground lead from your 12v supply.
  5. Connect the positive (+) lead from your DMM to the square pad at **JP10**, located between D33 and R17.
- 6. You should read +5v DC (+/- 0.20v), if it does then the MCU Power Supply has passed this check.
+ 6. You should read +5v DC (+/- 0.10v), if it does then the MCU Power Supply has passed this check.
  7. Turn off the 12v supply and disconnect your leads.
  8. If your MCU Power Supply has passed this test you may now jumper **JP10** to supply power to the MCU.
 
@@ -34,7 +34,7 @@ Orient the Jaguar Revision A3 board so that the U6 (MPX4100AP) silk screen is lo
 **Step 9 :** 
 /-- 337x260 img/analog_power_supply.png "Install Analog Sensors power supply components" --/
 
- 1. **U2** *(LM2937ET-5.0)* Install this component from the Through Hole side with the heatsink facing away from the center of the board.
+ 1. **U2** *(LM2940ET-5.0)* Install this component from the Through Hole side with the heatsink facing away from the center of the board.
  2. **C14** *(0.1µF)* 
  3. **C16** *(0.1µF)*
  4. **C12** *(10µF)* Polarised tantalum capacitor; Make sure that it is oriented so that the positive lead is towards the bottom of the board.
@@ -53,7 +53,7 @@ Orient the Jaguar Revision A3 board so that the U6 (MPX4100AP) silk screen is lo
  3. Set your DMM to measure 20v DC.
  4. Connect the negative (-) lead from your DMM to the ground lead from your 12v supply.
  5. Connect the positive (+) lead from your DMM to the square pad at **JP9**, located between C18 and D2.
- 6. You should read +5v DC (+/- 0.20v), if you do then your Analog Sensors power supply has passed this check.
+ 6. You should read +5v DC (+/- 0.10v), if you do then your Analog Sensors power supply has passed this check.
  7. Turn off the 12v supply and disconnect your leads.
  8. If your Analog Sensors power supply has passed this test you may now jumper **JP9** to supply power to the rest of the board.
 

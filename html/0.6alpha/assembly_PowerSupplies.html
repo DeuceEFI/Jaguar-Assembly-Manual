@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Jaguar Revision A3 for FreeEMS Assembly Manual</title>
+<title>Jaguar version 0.6-alpha for FreeEMS Assembly Manual</title>
 <meta charset="utf-8">
 <style></style>
 <link rel="stylesheet" href="style.css">
@@ -16,7 +16,7 @@
 
 <h2>Power Supplies</h2>
 
-<p>Orient the Jaguar Revision A3 board so that the U6 (MPX4100AP) silk screen is located to the left side and U3 will be in the upper left corner. You should not see any of the SMD components, they should be on the back side of the board. For the remainder of the assembly manual this will be how the Jaguar board should be oriented to install the through hole components.</p>
+<p>Orient the Jaguar version 0.6-alpha board so that the U6 (MPX4250AC6U) silk screen is located to the left side and U3 will be in the upper left corner. You should not see any of the SMD components, they should be on the back side of the board. For the remainder of the assembly manual this will be how the Jaguar board should be oriented to install the through hole components.</p>
 
 <h4>Install MCU Power Supply components</h4>
 
@@ -32,7 +32,7 @@
 <p></div></p>
 
 <ol>
-<li><strong>U3</strong> <em>(LM2937ET-5.0)</em> Install this component from the Through Hole side with the heatsink facing away from the center of the board.</li>
+<li><strong>U3</strong> <em>(LM2940ET-5.0)</em> Install this component from the Through Hole side with the heatsink facing away from the center of the board.</li>
 <li><strong>C15</strong> <em>(0.1µF)</em></li>
 <li><strong>C17</strong> <em>(0.1µF)</em></li>
 <li><strong>C13</strong> <em>(10µF)</em> Polarised tantalum capacitor; Make sure that it is oriented so that the positive lead is towards the bottom of the board.</li>
@@ -60,7 +60,7 @@
 <li>Set your DMM to measure 20v DC.</li>
 <li>Connect the negative (-) lead from your DMM to the ground lead from your 12v supply.</li>
 <li>Connect the positive (+) lead from your DMM to the square pad at <strong>JP10</strong>, located between D33 and R17.</li>
-<li>You should read +5v DC (+/- 0.20v), if it does then the MCU Power Supply has passed this check.</li>
+<li>You should read +5v DC (+/- 0.10v), if it does then the MCU Power Supply has passed this check.</li>
 <li>Turn off the 12v supply and disconnect your leads.</li>
 <li>If your MCU Power Supply has passed this test you may now jumper <strong>JP10</strong> to supply power to the MCU.</li>
 </ol>
@@ -79,7 +79,7 @@
 <p></div></p>
 
 <ol>
-<li><strong>U2</strong> <em>(LM2937ET-5.0)</em> Install this component from the Through Hole side with the heatsink facing away from the center of the board.</li>
+<li><strong>U2</strong> <em>(LM2940ET-5.0)</em> Install this component from the Through Hole side with the heatsink facing away from the center of the board.</li>
 <li><strong>C14</strong> <em>(0.1µF)</em></li>
 <li><strong>C16</strong> <em>(0.1µF)</em></li>
 <li><strong>C12</strong> <em>(10µF)</em> Polarised tantalum capacitor; Make sure that it is oriented so that the positive lead is towards the bottom of the board.</li>
@@ -108,9 +108,64 @@
 <li>Set your DMM to measure 20v DC.</li>
 <li>Connect the negative (-) lead from your DMM to the ground lead from your 12v supply.</li>
 <li>Connect the positive (+) lead from your DMM to the square pad at <strong>JP9</strong>, located between C18 and D2.</li>
-<li>You should read +5v DC (+/- 0.20v), if you do then your Analog Sensors power supply has passed this check.</li>
+<li>You should read +5v DC (+/- 0.10v), if you do then your Analog Sensors power supply has passed this check.</li>
 <li>Turn off the 12v supply and disconnect your leads.</li>
 <li>If your Analog Sensors power supply has passed this test you may now jumper <strong>JP9</strong> to supply power to the rest of the board.</li>
+</ol>
+
+<p><hr id="assembly_OV_protection"></p>
+
+<h2>Over-Voltage Protection</h2>
+
+<p>Turn the Jaguar version 0.6-alpha PCB over and orient the board so that the U12 (TC442xA) silk screen is located in the upper left corner. You should see all of the SMD components, they should be on the this side of the board.</p>
+
+<h4>Install Over-Voltage Protection components</h4>
+
+<p><strong>Step 11 :</strong> </p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/mcu_power_supply.png"><img src="img/mcu_power_supply.png" width=337 height=260 title="Install Over-Voltage Protection components" alt="Install Over-Voltage Protection components">
+<div class=pict_title>Install Over-Voltage Protection components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ol>
+<li><strong>Ux</strong> <em>(xxx)</em> Install this component on the SMD side with the dual pins facing the top of the board.</li>
+<li><strong>Rxx</strong> <em>(xxx ohm)</em></li>
+<li><strong>Rxx</strong> <em>(xxx ohm)</em></li>
+<li><strong>Rxx</strong> <em>(xxx ohm)</em></li>
+<li><strong>Rxx</strong> <em>(xxx ohm)</em></li>
+<li><strong>Q12</strong> <em>(xxx)</em> Install this component on the SMD side with the xxx pins facing the xxx of the board.</li>
+<li><strong>F1</strong> <em>(xxx)</em></li>
+</ol>
+
+<h4>Test Over-Voltage Protection components</h4>
+
+<p><strong>Step 12 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/mcu_power_supply.png"><img src="img/mcu_power_supply.png" width=337 height=260 title="Test Over-Voltage Protection components" alt="Test Over-Voltage Protection components">
+<div class=pict_title>Test Over-Voltage Protection components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ol>
+<li>Connect 12v supply positive (+) to the pad labeled <strong>12v-SW</strong> between D44 and U6.</li>
+<li>Connect 12v supply negative (-) to the pad labeled <strong>GND</strong> between D3 an R55.</li>
+<li>Set your DMM to measure 20v DC.</li>
+<li>Connect the negative (-) lead from your <strong>first</strong> DMM to the ground lead from your 12v supply.</li>
+<li>Connect the positive (+) lead from your <strong>first</strong> DMM to the round pad labeled <strong>5v</strong> in the <strong>MAP</strong> section.</li>
+<li>Connect the negative (-) lead from your <strong>second</strong> DMM to the ground lead from your 12v supply.</li>
+<li>Connect the positive (+) lead from your <strong>second</strong> DMM to the round pad labeled <strong>TPS-5v</strong> near the bottom right section of the board.</li>
+<li>Both of your DMMs should read +5v DC (+/- 0.10v), if it does then check to make sure that Q12 or the Analog-5v regulator <strong>U2</strong> is not overheating.</li>
+<li>Next the connect the <strong>TPS-5v</strong> pad to a 12v power supply and ensure that your <strong>first</strong> DMM does not read over 5.25v. Also note if Q12 overheats.</li>
+<li>Turn off the 12v supply and disconnect your leads.</li>
 </ol>
 
 <p><hr id="links"></p>

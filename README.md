@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a repository for documenting the assembly of a Jaguar Revision A.3 PCB for FreeEMS.
+This is a repository for documenting the assembly of a Jaguar version 0.6-alpha PCB for FreeEMS.
 
 The documentation is written in markdown syntax and can be converted to
 many formats, including HTML and PDF (only HTML generated with the included
@@ -44,7 +44,7 @@ Doing that will build a HTML pages into the html directory.
 
 * Read the [Markdown reference manual](http://daringfireball.net/projects/markdown/syntax)
 * Fork this project on [github](https://github.com/).
-* Edit contents of the [doc/revA3]() directory or create another directory with
+* Edit contents of the [doc/0.6alpha]() directory or create another directory with
   similar structure.
 * Ensure the output of `build.rb` is valid (it's built into the [html/]() -directory). Edit the .md files until it is!
 * Commit and push your changes

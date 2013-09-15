@@ -1,4 +1,4 @@
-title: Jaguar Revision A3 for FreeEMS Assembly Manual
+title: Jaguar version 0.6-alpha for FreeEMS Assembly Manual
 header:
   - links
   - prev_next
@@ -24,6 +24,7 @@ structure:
     - pcb_bake # instructions how to bake the board in an oven
   - assembly_PowerSupplies:
     - assembly_PS # instructions to assemble the power supplies
+    - assembly_OV_protection # instructions to assemble the over-voltage protection
   - assembly_MCU_components:
     - assembly_MCU_components # instructions to assemble MCU supporting components
     - firmware_upload # instructions on how to test the USB communications
@@ -49,7 +50,7 @@ structure:
   - assembly_complete:
     - assembly_complete
   - installation:
-    - installation_overview # how to install the Jaguar Revision A3 PCB
-    - installation_inputs # how to connect your inputs to the Jaguar Revision A3 PCB
-    - installation_outputs # how to connect the outputs from the Jaguar Revision A3 PCB
-    - installation_injectors # how to connect the injectors to the Jaguar Revision A3 PCB
+    - installation_overview # how to install the Jaguar version 0.6-alpha PCB
+    - installation_inputs # how to connect your inputs to the Jaguar version 0.6-alpha PCB
+    - installation_outputs # how to connect the outputs from the Jaguar version 0.6-alpha PCB
+    - installation_injectors # how to connect the injectors to the Jaguar version 0.6-alpha PCB
