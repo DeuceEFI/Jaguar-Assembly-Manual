@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaguar version 0.6-alpha for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_pin_strips.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="secure_components.html">Next &gt;&gt;</a> </p>
+
+<p><hr id="testing_inputs"></p>
+
+<h1>Testing Inputs</h1>
+
+<p>It's important that you verify the correct operation of your input conditioning circuits before attempting to use the device on a vehicle.</p>
+
+<h2>Test BRV Input</h2>
+
+<ul>
+<li>Connect a 5v DC supply to the pad labeled <strong>BRV-12v</strong></li>
+<li>Connect the negative lead from the 5v DC supply to the pad labeled <strong>GND</strong></li>
+<li>Open EMStudio or MegaTunix, you should see 5v DC registered for BRV</li>
+<li>Connect a 12v DC supply to the pad labeled <strong>BRV-12v</strong></li>
+<li>Connect the negative lead from the 12v DC supply to the pad labeled <strong>GND</strong></li>
+<li>Open EMStudio or MegaTunix, you should see 12v DC registered for BRV</li>
+</ul>
+
+<h2>Testing analog sensor inputs</h2>
+
+<ul>
+<li>Attach a variable voltage source, such as a JimStim, to one of the Jaguar analog sensor inputs.</li>
+<li>Adjust the simulated sensor and observe the corresponding values changing within EMStudio or MegaTunix.</li>
+<li>Repeat the process for all analog sensor inputs being used.
+
+<ul>
+<li>If there is no change seen within EMStudio or MegaTunix check the following:
+
+<ul>
+<li>That you have the correct corresponding analog input.</li>
+<li>The analog sensor input circuit is correctly assembled.</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_pin_strips.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="secure_components.html">Next &gt;&gt;</a> </p></body>
+</html>

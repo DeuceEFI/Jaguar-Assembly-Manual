@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaguar version 0.6-alpha for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_TH_Inputs.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_pin_strips.html">Next &gt;&gt;</a> </p>
+
+<p><hr id="assembly_ignition"></p>
+
+<h4>Ignition circuits</h4>
+
+<p><strong>Step 24 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/ignition.png"><img src="img/ignition.png" width=337 height=260 title="Install ignition XOR components" alt="Install ignition XOR components">
+<div class=pict_title>Install ignition XOR components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li><strong>R14</strong> <em>(1k ohm)</em> located upper right between R22 and R64.</li>
+<li><strong>R64</strong> <em>(1k ohm)</em> located upper right between R14 and BDM.</li>
+<li><strong>R65</strong> <em>(1k ohm)</em> located upper right to the right of U5.</li>
+<li><strong>R15</strong> <em>(470 ohm)</em> located upper right to the right of U5 and above R65.</li>
+<li><strong>JP1</strong> <em>(3 pin 0.100&quot; header strip)</em> for selecting inverted or non-inverted input.</li>
+<li><strong>JP2</strong> <em>(3 pin 0.100&quot; header strip)</em> for selecting inverted or non-inverted output.</li>
+<li><strong>JP7</strong> <em>(wire jumper)</em> Install a wire jumper between these pads for normal operation.</li>
+<li><strong>JP8</strong> <em>(wire jumper)</em> Install a wire jumper between these pads for normal operation.</li>
+<li><strong>U5</strong> <em>(CD74AC86E XOR Gate)</em></li>
+</ul>
+
+<p>I recommend using an IC socket to install U5 that way if you need to replace the XOR you will be able to without de-soldering/re-soldering.</p>
+
+<p>JP7 and JP8 are there if someone wants to use MCU pins other than Port T2 (JP7) and Port T3 (JP8) with the XOR I/O circuits or to use another output circuit.</p>
+
+<p>The exclusive-OR gate specified in the Bill of Materials is ONLY to be used as logic level outputs to the logic level inputs on EDIS/DIS modules! </p>
+
+<p><hr id="assembly_fuel"></p>
+
+<h4>Fuel circuit</h4>
+
+<p><strong>Step 25 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/fuel.png"><img src="img/fuel.png" width=337 height=260 title="Fuel circuit components" alt="Fuel circuit components">
+<div class=pict_title>Fuel circuit components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li><strong>R53</strong> <em>(2.4k ohm)</em> located bottom lower right between D30 and D40.</li>
+<li><strong>R54</strong> <em>(1k ohm)</em> located bottom lower right below R8.</li>
+<li><strong>R63</strong> <em>(100k ohm)</em> located bottom lower right below D1.</li>
+<li><strong>D30</strong> <em>(LED Red)</em> direction dependant, orient the <strong>K</strong> lead to the bottom edge of the PCB. This is indicated by the short lead of the LED.</li>
+<li><strong>D31</strong> <em>(1N4148)</em> direction dependant, orient the <strong>K</strong> lead to the left edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<h4>FAN circuit</h4>
+
+<p><strong>Step 26 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/fan.png"><img src="img/fan.png" width=337 height=260 title="Fan circuit components" alt="Fan circuit components">
+<div class=pict_title>Fan circuit components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li><strong>R72</strong> <em>(2.4k ohm)</em></li>
+<li><strong>R74</strong> <em>(1k ohm)</em></li>
+<li><strong>R73</strong> <em>(100k ohm)</em></li>
+<li><strong>D39</strong> <em>(LED Red)</em> direction dependant, orient the <strong>K</strong> lead to the top edge of the PCB. This is indicated by the short lead of the LED.</li>
+<li><strong>D40</strong> <em>(1N4148)</em> direction dependant, orient the <strong>K</strong> lead to the top edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<h4>Accessory circuit</h4>
+
+<p><strong>Step 27 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/acc.png"><img src="img/acc.png" width=337 height=260 title="Accessory circuit components" alt="Accessory circuit components">
+<div class=pict_title>Accessory circuit components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li><strong>R75</strong> <em>(2.4k ohm)</em></li>
+<li><strong>R77</strong> <em>(1k ohm)</em></li>
+<li><strong>R76</strong> <em>(100k ohm)</em></li>
+<li><strong>D41</strong> <em>(LED Red)</em> direction dependant, orient the <strong>K</strong> lead to the bottom edge of the PCB. This is indicated by the short lead of the LED.</li>
+<li><strong>D42</strong> <em>(1N4148)</em> direction dependant, orient the <strong>K</strong> lead to the bottom edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<p><hr id="assembly_injection"></p>
+
+<h2>Injection circuits</h2>
+
+<p><strong>Only install the same number of injection circuits as the number of injectors you are wanting to drive.</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/injectors.png"><img src="img/injectors.png" width=337 height=260 title="Install injection circuits" alt="Install injection circuits">
+<div class=pict_title>Install injection circuits
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<h4>Injector 1</h4>
+
+<p><strong>Step 31 :</strong></p>
+
+<ul>
+<li><strong>R47</strong> <em>(2.4k ohm)</em></li>
+<li><strong>R41</strong> <em>(1k ohm)</em></li>
+<li><strong>R35</strong> <em>(100k ohm)</em></li>
+<li><strong>D18</strong> <em>(LED Red)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the board. This is indicated by the short lead of the LED.</li>
+<li><strong>D24</strong> <em>(1N4148)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<h4>Injector 2</h4>
+
+<p><strong>Step 32 :</strong></p>
+
+<ul>
+<li><strong>R48</strong> <em>(2.4k ohm)</em></li>
+<li><strong>R42</strong> <em>(1k ohm)</em></li>
+<li><strong>R36</strong> <em>(100k ohm)</em></li>
+<li><strong>D19</strong> <em>(LED Red)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the board. This is indicated by the short lead of the LED.</li>
+<li><strong>D25</strong> <em>(1N4148)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<h4>Injector 3</h4>
+
+<p><strong>Step 33 :</strong></p>
+
+<ul>
+<li><strong>R49</strong> <em>(2.4k ohm)</em></li>
+<li><strong>R43</strong> <em>(1k ohm)</em></li>
+<li><strong>R37</strong> <em>(100k ohm)</em></li>
+<li><strong>D20</strong> <em>(LED Red)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the board. This is indicated by the short lead of the LED.</li>
+<li><strong>D26</strong> <em>(1N4148)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<h4>Injector 4</h4>
+
+<p><strong>Step 34 :</strong></p>
+
+<ul>
+<li><strong>R50</strong> <em>(2.4k ohm)</em></li>
+<li><strong>R44</strong> <em>(1k ohm)</em></li>
+<li><strong>R38</strong> <em>(100k ohm)</em></li>
+<li><strong>D21</strong> <em>(LED Red)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the board. This is indicated by the short lead of the LED.</li>
+<li><strong>D27</strong> <em>(1N4148)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<h4>Injector 5</h4>
+
+<p><strong>Step 35 :</strong></p>
+
+<ul>
+<li><strong>R51</strong> <em>(2.4k ohm)</em></li>
+<li><strong>R45</strong> <em>(1k ohm)</em></li>
+<li><strong>R39</strong> <em>(100k ohm)</em></li>
+<li><strong>D22</strong> <em>(LED Red)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the board. This is indicated by the short lead of the LED.</li>
+<li><strong>D28</strong> <em>(1N4148)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<h4>Injector 6</h4>
+
+<p><strong>Step 36 :</strong></p>
+
+<ul>
+<li><strong>R52</strong> <em>(2.4k ohm)</em></li>
+<li><strong>R46</strong> <em>(1k ohm)</em></li>
+<li><strong>R40</strong> <em>(100k ohm)</em></li>
+<li><strong>D23</strong> <em>(LED Red)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the board. This is indicated by the short lead of the LED.</li>
+<li><strong>D29</strong> <em>(1N4148)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<h4>Injector 7</h4>
+
+<p><strong>Step 37 :</strong></p>
+
+<ul>
+<li><strong>R66</strong> <em>(2.4k ohm)</em></li>
+<li><strong>R70</strong> <em>(1k ohm)</em></li>
+<li><strong>R68</strong> <em>(100k ohm)</em></li>
+<li><strong>D35</strong> <em>(LED Red)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the board. This is indicated by the short lead of the LED.</li>
+<li><strong>D37</strong> <em>(1N4148)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<h4>Injector 8</h4>
+
+<p><strong>Step 38 :</strong></p>
+
+<ul>
+<li><strong>R67</strong> <em>(2.4k ohm)</em></li>
+<li><strong>R71</strong> <em>(1k ohm)</em></li>
+<li><strong>R69</strong> <em>(100k ohm)</em></li>
+<li><strong>D36</strong> <em>(LED Red)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the board. This is indicated by the short lead of the LED.</li>
+<li><strong>D38</strong> <em>(1N4148)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the PCB. This is indicated by the white line.</li>
+</ul>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_TH_Inputs.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_pin_strips.html">Next &gt;&gt;</a> </p></body>
+</html>
