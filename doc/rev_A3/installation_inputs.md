@@ -12,7 +12,7 @@
 
 - **Sensor-GND**	Located in the upper right of the board near JP6.  This is used for the TPS sender ground connection and should be connected directly to the TPS sensor.
 - **Sensor-GND**	Located in the upper right of the board near C38.  This is used for the primary analog sensor signal ground and should be connected to the engine block.
-- **Sensor-GND**	Located in the upper right of the board near C33.  This is used for the secondary analog sensor signal ground and should be connected to the engine block.
+- **Sensor-GND**	Located in the upper right of the board near C35.  This is used for the secondary analog sensor signal ground and should be connected to the engine block.
 
 ###Connect the following **Switched 12v** connections to the Jaguar board:
 
