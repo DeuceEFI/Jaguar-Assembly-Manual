@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaguar version 0.7-alpha for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="general_info.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="reflow.html">Next &gt;&gt;</a> </p>
+
+<p><hr id="assembly_overview"></p>
+
+<h1>Assembling the board</h1>
+
+<p><strong>The <a href="https://github.com/DeuceEFI/Jaguar/blob/0.7-alpha/docs/Jaguar-0.7-alpha-Schematic.pdf">schematics</a> are the definite guide to what component goes in what position and can be opened with any PDF viewer.</strong></p>
+
+<p>Optionally the repository with all development files can be cloned. Click on <a href="https://github.com/DeuceEFI/Jaguar">clone Jaguar</a> for further details.</p>
+
+<p>This is a 'hand assembly' process, and therefore the components will be placed from the center of the PCB out toward the four edges, starting with the components that require the most amount of work to mount.
+All through-hole components will be populated after the reflow process has been performed. </p>
+
+<h4>Important: An anti-static surface must be present during assembly; an anti-static wrist strap should also be worn at all times.</h4>
+
+<p>For future reference if a component direction is not specified it is <strong>non-polarised</strong> and can be mounted in either direction.</p>
+
+<p>The component placement directions will always be referenced in the following manner:</p>
+
+<p><strong>THIS IS WRONG</strong></p>
+
+<ul>
+<li>PCB TOP (SMD) side orientation:
+
+<ul>
+<li>"<strong>Jaguar</strong>" and "<strong>Copyright 2012-2014</strong>" will always be visible in the upper left corner of the board.</li>
+<li>"<strong>Designed by</strong>","<strong>Andy Goss</strong>", "<strong>for FreeEMS</strong>", "<strong>Version 0.7-alpha</strong>" will always be visible on the center of the board.</li>
+</ul></li>
+<li>PCB BOTTOM (Through Hole) side orientation:
+
+<ul>
+<li>All "<strong>R</strong>", "<strong>C</strong>", "<strong>JP</strong>" and the wire connection point silkscreens will be visible on this side. The U6 (MPX4250AP) silk screen is located to the left side and U3 will be in the upper left side. You should only see the four SMD resistors and the four SMD LEDs in the upper right corner of the board.</li>
+</ul></li>
+</ul>
+
+<h4><strong>Follow these steps in order:</strong></h4>
+
+<p><hr id="assembly_primary"></p>
+
+<h2>Method ONE : Pre Reflow</h2>
+
+<p>Follow the these instructions to install the <strong>MCU</strong>, the <strong>FT232RL</strong>, the <strong>MAX9926UAEE+</strong>, the 3 <strong>VNN7NV0413TR</strong> MOSFETs and depending on how many high impedance (Hi-Z) fuel injectors you need, install that number of <strong>VND7NV04</strong> MOSFETs. You will find the correct component values in the BOM. The topology of the circuits being assembled can be seen in the schematics.</p>
+
+<h4>MCU</h4>
+
+<p><strong>Step 1 :</strong> </p>
+
+<div class=imagebox style="min-height:350px">
+<a class=pict href="img/MCU.png"><img src="img/MCU.png" width=440 height=330 title="MCU with solder paste" alt="MCU with solder paste">
+<div class=pict_title>MCU with solder paste
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<p>First we will install the MCU, this will be one of the most difficult components for you to place. It will require a steady hand and patience. The MCU is placed first as it requires the most work, following this procedure will ensure no other components are bumped during the process:</p>
+
+<ol>
+<li>Take the syringe of solder paste and apply a bead to each of the copper pads for the MCU (<strong>U1</strong>) pins this will be 112 pads in total. Make sure that you <strong>do not</strong> bridge between pads, care here will save you hours later on having to remove the extra solder.</li>
+<li>It is recommended that non-conductive thermal paste be placed in the center of the MCU as this will help to dissipate heat to the copper heat pad below. Make sure that thermal paste is not placed all the way out to the MCU edge as it will ooze out when placed, no thermal paste should contact any pins.</li>
+<li>Now place the MCU in location noting that the orientation is marked by the silkscreen <strong>1</strong> on the top side of the board. As you are looking at the board where <strong>Jaguar</strong> can be read on the right hand side of the board, pin <strong>1</strong> will be located in the upper right corner of the MCU pads. The lettering on the MCU will be upside down.</li>
+</ol>
+
+<p><em>Congratulations the MCU is now mounted</em></p>
+
+<h4>USB UART</h4>
+
+<p><strong>Step 2 :</strong> </p>
+
+<div class=imagebox style="min-height:382px">
+<a class=pict href="img/USB.png"><img src="img/USB.png" width=440 height=362 title="FT232RL" alt="FT232RL">
+<div class=pict_title>FT232RL
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<p>Next we will install the USB to Serial UART, this will be another of the more difficult components for you to place. It will require a steady hand and patience. Take care placing the FT232RL as the pin pitch is the same as the MCU.</p>
+
+<ol>
+<li>Take the syringe of solder paste and apply a bead to each of the copper pads for the FT232RL (<strong>U7</strong>) pins this will be 28 pads in total. Make sure that you <strong>do not</strong> bridge between pads, care here will save you hours later on having to remove the extra solder.</li>
+<li>Now place the FT232RL in location noting that the orientation is marked by the silkscreen <strong>o</strong> on the top side of the board. As you are looking at the board where <strong>Jaguar</strong> can be read on the right hand side of the board, pin <strong>1</strong> will be located in the lower left corner of the FT232RL pads.</li>
+</ol>
+
+<p><em>Congratulations the FT232RL is now mounted</em></p>
+
+<p>You may also wish to install the optocouplers (U8 and U9) at this point if you know you are going to use them to isolate the USB port from the MCU communications ports. They are mounted down and to the left of the FT232RL chip and just to the right of the MCU (U1).</p>
+
+<h4>MAX9926UAEE+</h4>
+
+<p><strong>Step 3 :</strong> </p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/MAX9926.png"><img src="img/MAX9926.png" width=440 height=260 title="MAX9926UAEE+" alt="MAX9926UAEE+">
+<div class=pict_title>MAX9926UAEE+
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<p>Next we will install the MAX9926UAEE+, this will be another of the more difficult components for you to place. It will require a steady hand and patience. Take care placing the MAX9926UAEE+ as the pin pitch is the same as the MCU.</p>
+
+<ol>
+<li>Take the syringe of solder paste and apply a bead to each of the copper pads for the MAX9926UAEE+ (<strong>U4</strong>) pins this will be 16 pads in total. Make sure that you <strong>do not</strong> bridge between pads, care here will save you hours later on having to remove the extra solder.</li>
+<li>Now place the MAX9926UAEE+ in location noting that the orientation is marked by the silkscreen <strong>o</strong> on the top side of the board. As you are looking at the board where <strong>Jaguar</strong> can be read on the right hand side of the board, pin <strong>1</strong> will be located in the lower left corner of the MAX9926UAEE+ pads.</li>
+</ol>
+
+<p><em>Congratulations the MAX9926UAEE+ is now mounted</em></p>
+
+<h4>VNN7NV0413TR</h4>
+
+<p><strong>Step 4 :</strong> </p>
+
+<div class=imagebox style="min-height:335px">
+<a class=pict href="img/Fuel-Fan-Acc.png"><img src="img/Fuel-Fan-Acc.png" width=440 height=315 title="VNN7NV0413TR MOSFETs" alt="VNN7NV0413TR MOSFETs">
+<div class=pict_title>VNN7NV0413TR MOSFETs
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<p>Next we will install the VNN7NV0413TR MOSFETs, this will be the beginning of the easier components for you to place. It will require a steady hand and patience. </p>
+
+<ol>
+<li>Take the syringe of solder paste and apply a bead to each of the copper pads for the VNN7NV0413TR MOSFETs (<strong>Q9, Q10, Q11</strong>) pins this will be 12 pads in total. Make sure that you <strong>do not</strong> bridge between pads, care here will save you hours later on having to remove the extra solder.</li>
+<li>Now place the VNN7NV0413TR MOSFETs in location noting that the orientation is marked by the silkscreen on the top side of the board. As you are looking at the board where <strong>Jaguar</strong> can be read on the right hand side of the board, these will appear to be mounted with their wording upside down.</li>
+</ol>
+
+<p><em>Congratulations the output VNN7NV0413TR MOSFETs are now mounted</em></p>
+
+<h4>VND7NV04</h4>
+
+<p><strong>Step 5 :</strong> </p>
+
+<div class=imagebox style="min-height:451px">
+<a class=pict href="img/Injectors.png"><img src="img/Injectors.png" width=440 height=431 title="VND7NV04 MOSFETs" alt="VND7NV04 MOSFETs">
+<div class=pict_title>VND7NV04 MOSFETs
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<p>Next we will install the VND7NV04 MOSFETs, this will be the beginning of the easier components for you to place. It will require a steady hand and patience. Only mount the number of these to match the number of injectors you wish to drive. <br>
+<strong>Examples:</strong><br>
+ - for 4 injectors install <strong>Q1, Q2, Q3 and Q4</strong><br>
+ - for 6 injectors install <strong>Q1, Q2, Q3, Q4, Q5, Q6</strong><br>
+ - for 8 injectors install <strong>Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8</strong></p>
+
+<ol>
+<li>Take the syringe of solder paste and apply a bead to each of the copper pads for the VND7NV04 MOSFET pins from the above list this will be 3 pads per VND7NV04 MOSFET. Make sure that you <strong>do not</strong> bridge between pads, care here will save you hours later on having to remove the extra solder.</li>
+<li>Now place the VND7NV04 MOSFETs in location noting that the orientation is marked by the silkscreen on the top side of the board. As you are looking at the board where <strong>Jaguar</strong> can be read on the right hand side of the board, these will appear to be mounted with their wording reading correctly from left to right. This photo shows 6 injector drivers installed.</li>
+</ol>
+
+<p><em>Congratulations the injector VND7NV04 MOSFETs are now mounted</em></p>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="general_info.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="reflow.html">Next &gt;&gt;</a> </p></body>
+</html>

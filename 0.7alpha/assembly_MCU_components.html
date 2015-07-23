@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaguar version 0.6-alpha for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_PowerSupplies.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_TH_Inputs.html">Next &gt;&gt;</a> </p>
+
+<p><hr id="assembly_MCU_components"></p>
+
+<h4>MCU Components Installation</h4>
+
+<p>These are the necessary components for the MCU to function.</p>
+
+<p><strong>Step 11 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/oscillator_pll.png"><img src="img/oscillator_pll.png" width=337 height=260 title="MCU Oscillator and PLL circuit components" alt="MCU Oscillator and PLL circuit components">
+<div class=pict_title>MCU Oscillator and PLL circuit components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<p>Install the following components for the MCU:</p>
+
+<ul>
+<li><strong>C1</strong> <em>(0.22µF)</em> located near the top center of the board between PP1 and P20.</li>
+<li><strong>C2</strong> <em>(0.22µF)</em> located near the center left of the board between PP2 and R60.</li>
+<li><strong>C3</strong> <em>(0.22µF)</em> located near the center right of the board between C48 and R6.</li>
+<li><strong>C4</strong> <em>(0.22µF)</em> located near the center left of the board between C44 and D6.</li>
+<li><strong>C5</strong> <em>(0.22µF)</em> located near the bottom center of the board between D10 and R78.</li>
+<li><strong>C8</strong> <em>(0.22µF)</em> located near the center right of the board between C6 and C7.</li>
+<li><strong>C44</strong> <em>(0.22µF)</em> located near the center left of the board between R60 and D8.</li>
+<li><strong>C6</strong> <em>(0.1µF)</em> located near the center right of the board between BDM and C8.</li>
+<li><strong>C7</strong> <em>(6.8nF)</em> located near the center right of the board between C8 and P34.</li>
+<li><strong>C9</strong> <em>(680pF)</em> located near the center right of the board between C3 and C7.</li>
+<li><strong>C10</strong> <em>(12pF)</em> located near the center right of the board to the right of X1.</li>
+<li><strong>C11</strong> <em>(12pF)</em> located near the center right of the board to the right of X1.</li>
+<li><strong>C47</strong> <em>(10µF)</em> Polarised tantalum capacitor; Make sure that it is oriented so that the positive lead is towards the left edge of the board. Located near the center left of the board between R11 and R61.</li>
+<li><strong>C48</strong> <em>(10µF)</em> Polarised tantalum capacitor; Make sure that it is oriented so that the positive lead is towards the right edge of the board. Located near the center right of the board between R3 and C3.</li>
+<li><strong>D1</strong> <em>(LED Yellow)</em> Direction dependant, orient the <strong>K</strong> lead to the top edge of the board. This is indicated by the short lead of the LED. Located near the bottom center of the board between R7 and R63.</li>
+<li><strong>R1</strong> <em>(10k ohm)</em> located near the center right of the board above X1.</li>
+<li><strong>R2</strong> <em>(10k ohm)</em> located near the center right of the board between R5 and R3.</li>
+<li><strong>R3</strong> <em>(10k ohm)</em> located near the center right of the board between R2 and C48.</li>
+<li><strong>R4</strong> <em>(10k ohm)</em> located near the center right of the board between P33 and BDM.</li>
+<li><strong>R5</strong> <em>(10k ohm)</em> located near the center right of the board between BDM and R2.</li>
+<li><strong>R8</strong> <em>(10k ohm)</em> located near the center bottom of the board between Load/Run and D1.</li>
+<li><strong>R6</strong> <em>(3.3k ohm)</em> located near the center right of the board between C3 and P34.</li>
+<li><strong>R7</strong> <em>(1k ohm)</em> located near the center bottom of the board between X1 and D1.</li>
+<li><strong>R78</strong> <em>(1k ohm)</em> located near the center bottom of the board above Load/Run.</li>
+<li><strong>BDM</strong> <em>(2x3 0.100&quot; pin strip header)</em> located near the upper center right of the board between R4 and R35.</li>
+<li><strong>Load/Run</strong> <em>(1x2 0.100&quot; pin strip header)</em> located near the center bottom of the board between C5 and R8.</li>
+<li><strong>X1</strong> <em>(16MHz crystal)</em> located near the center right of the board between R1 and R7.</li>
+</ul>
+
+<h4>USB UART Components Installation</h4>
+
+<p>These are the necessary components for the USB to MCU communications to function.</p>
+
+<p><strong>Step 12 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/usb_uart.png"><img src="img/usb_uart.png" width=337 height=260 title="USB UART circuit components" alt="USB UART circuit components">
+<div class=pict_title>USB UART circuit components
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li><p><strong>C39</strong> <em>(0.1µF)</em> located near the left center of the board up and right of U6.</p></li>
+<li><p><strong>C41</strong> <em>(0.1µF)</em> located near the top left of the board between J1 and R55.</p></li>
+<li><p><strong>C40</strong> <em>(4.7µF)</em> Polarised tantalum capacitor; Make sure that it is oriented so that the positive lead is towards the left edge of the board. Located near the left center of the board between C39 and U6.</p></li>
+<li><p><strong>D33</strong> <em>(LED Green)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom edge of the board. This is indicated by the short lead of the LED. Located near the top left of the board between R57 and R59.</p></li>
+<li><p><strong>D34</strong> <em>(LED Green)</em> Direction dependant, orient the <strong>K</strong> lead to the bottom edge of the board. This is indicated by the short lead of the LED. Located near the top left of the board between R58 and R59.</p></li>
+<li><p><strong>R57</strong> <em>(470 ohm)</em> located near the top left of the board above D33.</p></li>
+<li><p><strong>R58</strong> <em>(470 ohm)</em> located near the top left of the board above D34.</p></li>
+<li><p><strong>R79</strong> <em>(22 ohm or Ferrite Bead)</em> located near the top left of the board between J1 and U6.</p></li>
+<li><p>Install either <strong>J1</strong> <em>(USB-B)</em> or <strong>J2</strong> <em>(USB-B Micro)</em> but <strong>NOT</strong> both!</p></li>
+</ul>
+
+<p>Next do either <strong>A</strong> or <strong>B</strong> but <strong>NOT</strong> both! To be clear, <strong>either</strong> install the digital isolator <strong>or</strong> bypass the optocoupler circuits, but do not do both.</p>
+
+<p><strong>A) To install an Analog Devices ADUMx201 or Texas Instruments ISO7421 digital isolator:</strong>
+- <strong>U9</strong> <em>(ADUMx201/ISO7421)</em> located to the right of the U1. Pin 1 on the device goes to Pin 1 on the PCB.
+- <strong>Jumper</strong> <em>(Jumper Wire)</em> between pin 1 of U9 to R60 pad directly across from U9 pin 1.
+- <strong>Jumper</strong> <em>(Jumper Wire)</em> between pin 2 of U9 to R60 pad closest to C44.
+- <strong>Jumper</strong> <em>(Jumper Wire)</em> between pin 4 of U9 to either pad between C44 and C4.
+- <strong>Jumper</strong> <em>(Jumper Wire)</em> between pin 7 of U9 to the RXB pad.
+- <strong>Jumper</strong> <em>(Jumper Wire)</em> between pin 8 of U9 to R56 pad closest to C39.</p>
+
+<p><strong>B) To bypass the optocoupler circuits:</strong>
+- Install a jumper wire from <strong>RX</strong> (one of the R60 pads) to <strong>RXB</strong> (near C21). This bypasses the optocoupler circuit.
+- Install a jumper wire from <strong>TX</strong> (near R60) to <strong>TXB</strong> (near C40). This bypasses the optocoupler circuit.</p>
+
+<p>If you have the <strong>original</strong> FreeEMS serial monitor program (included with the freeems-vanilla firmware) you will need the PNP transistor modification shown here, <strong>HOWEVER</strong> if you have the modified &quot;<strong>seank.hackers.special.by.fred.s19</strong>&quot; serial monitor program you <strong>DO NOT</strong> need the PNP modification:</p>
+
+<p>Install the PNP transistor modification to allow the MCU to operate without the USB cable being plugged in and connected to a computer:
+- <strong>Jumper</strong> <em>(Jumper Wire)</em> between U9 pin 5 to U8 pin 5.
+- <strong>PNP</strong> <em>(2N3906)</em> Connect Emitter to R60 pad directly across from U9 Pin 1, connect Collector to U8 pin 6, connect Base to R56 pad closest to C39.</p>
+
+<p><hr id="firmware_upload"></p>
+
+<h2>Uploading the firmware</h2>
+
+<p><strong>Step 13 :</strong></p>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/operation/FreeEMS_loader_settings.png"><img src="img/operation/FreeEMS_loader_settings.png" width=337 height=260 title="FreeEMS Loader Application" alt="FreeEMS Loader Application">
+<div class=pict_title>FreeEMS Loader Application
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li>These are the communications settings for the FreeEMS firmware:
+
+<ul>
+<li><strong>Baud rate</strong>: 115200</li>
+<li><strong>Data bits</strong>: 8</li>
+<li><strong>Stop bits</strong>: 1</li>
+<li><strong>Parity</strong>: ODD</li>
+</ul></li>
+</ul>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/operation/FreeEMS_loader_advanced.png"><img src="img/operation/FreeEMS_loader_advanced.png" width=337 height=260 title="Communication settings" alt="Communication settings">
+<div class=pict_title>Communication settings
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ol>
+<li>Install <a href="https://github.com/seank/freeems-loader">Seans loader</a> or <a href="https://github.com/djandruczyk/MegaTunix">MegaTunix</a>, these instructions are for Seans loader.</li>
+<li>Connect a USB cable between your computer and the Jaguar board.</li>
+<li>Jumper the load/run header.</li>
+<li>Turn the power supply to the Jaguar board <strong>on</strong>.</li>
+<li>Select the device <code>/dev/ttyUSB[n]</code> in Unix-like operating systems and <code>COM[n]</code> on Windows. Where
+<code>[n]</code> is the port number e.g.: <code>/dev/ttyUSB0</code> or <code>COM3</code></li>
+<li>Press the &quot;<strong>Connect</strong>&quot; button.</li>
+<li>Press the &quot;<strong>Load</strong>&quot; button.</li>
+<li>Choose a recent s19 of the Bench Test firmware variant.</li>
+<li>Wait until the erasing and programming phases are done.</li>
+<li>Press the &quot;<strong>Close/reset</strong>&quot; button.</li>
+<li>Remove the load/run jumper.</li>
+<li>Power cycle the Jaguar board.</li>
+</ol>
+
+<p><em>The FreeEMS Bench Test firmware is now be installed on your Jaguar board.</em></p>
+
+<h4>You will use the above procedure to load different FreeEMS firmware from this point forward.</h4>
+
+<h4>You may also use the <a href="https://github.com/djandruczyk/MegaTunix">MegaTunix</a> Firmware Loader to load the FreeEMS firmware if you prefer.</h4>
+
+<h2>Verifying correct operation of the firmware</h2>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/operation/CuteComDataStreaming.png"><img src="img/operation/CuteComDataStreaming.png" width=337 height=260 title="CuteCom streaming FreeEMS data logs" alt="CuteCom streaming FreeEMS data logs">
+<div class=pict_title>CuteCom streaming FreeEMS data logs
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ol>
+<li>Connect CuteCom with the correct settings and hex mode on.</li>
+<li>Verify that data is streaming past at a high rate.</li>
+<li>Send the stop data logging (update.block.with.datalog.stream.type.0x00-OFF.bin) packet from the Freeems-vanilla firmware lib directory and ensure that the stream stops.</li>
+<li>Clear the text area and turn off hex mode.</li>
+<li>Send the following test packets and record the returned strings;
+
+<ul>
+<li>Get firmware version; (request.firmware.version.bin).</li>
+<li>Get interface version; (request.interface.version.bin).</li>
+<li>Get decoder version; (request.decoder.name.bin).</li>
+</ul></li>
+<li>Ensure that the strings returned match what you uploaded.</li>
+</ol>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_PowerSupplies.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_TH_Inputs.html">Next &gt;&gt;</a> </p></body>
+</html>

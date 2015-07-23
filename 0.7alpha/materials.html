@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaguar version 0.7-alpha for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="overview.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="general_info.html">Next &gt;&gt;</a> </p>
+
+<p><hr id="using_bom"></p>
+
+<h1>Bill of Materials</h1>
+
+<p>The Bill of Materials (<strong>BOM</strong>) is broken down by component type and for those components that have multiple values you, as the end user, can pick and choose which components are best suited to your project. For each sub-circuit there is a matching assembly section.</p>
+
+<p>To view the BOM, it can be found in the <strong>docs</strong> directory and is called <strong>Jaguar-0.7-alpha.ods</strong>.</p>
+
+<h3>Overview with Important notes</h3>
+
+<ul>
+<li>Make sure you read and understand the instructions before continuing.</li>
+</ul>
+
+<h4>Legend of acronyms</h4>
+
+<p>Some of these acronyms are used in the schematic documentation.</p>
+
+<ul>
+<li><strong>AAP</strong>: <em>(<strong>A</strong>tmospheric <strong>A</strong>bsloute <strong>P</strong>ressure)</em>
+
+<ul>
+<li>Used for normalisation of the MAP vs atmospheric pressure, this is considered optional. Choose this if you live in a mountainous area, or intend to visit such areas using your vehicle. Currently this is not supported on the Jaguar Revision A3 board, but may have a pad to connect the supporting circuitry to in a future revision.</li>
+</ul></li>
+<li><strong>BDM</strong>: <em>(<strong>B</strong>ackground <strong>D</strong>ebug <strong>M</strong>odule)</em>
+
+<ul>
+<li>Used to program the Serial Monitor and for additional troubleshooting.</li>
+</ul></li>
+<li><strong>BRV</strong>: <em>(<strong>B</strong>attery <strong>R</strong>eference <strong>V</strong>oltage)</em>
+
+<ul>
+<li>Input circuitry to convert battery voltage to an acceptable voltage input for the MCU.</li>
+</ul></li>
+<li><strong>CHT</strong>: <em>(</em><em>C</em>oolant <strong>H</strong>ead <strong>T</strong>emperature)*
+
+<ul>
+<li>Sensor used to measure engine coolant temperature in the water jacket.</li>
+</ul></li>
+<li><strong>DIS</strong>: <em>(<strong>D</strong>istributorless <strong>I</strong>gnition <strong>S</strong>ystem)</em>
+
+<ul>
+<li>A method of wasted spark ignition implemented on General Motors vehicles.</li>
+</ul></li>
+<li><strong>DMM</strong>: <em>(<strong>D</strong>igital <strong>M</strong>ulti<strong>m</strong>eter)</em>
+
+<ul>
+<li>Used for testing amperage, resistance and voltage.</li>
+</ul></li>
+<li><p><strong>GND</strong>: <em>(<strong>G</strong>rou<strong>nd</strong>)</em></p></li>
+<li><strong>IAT</strong>: <em>(<strong>I</strong>ntake <strong>A</strong>ir <strong>T</strong>emperature)</em>
+
+<ul>
+<li>Sensor used to measure outside air temperature, usually found in the air cleaner.</li>
+</ul></li>
+<li><p><strong>IGN</strong>: <em>(<strong>Ign</strong>ition)</em></p></li>
+<li><p><strong>INJ</strong>: <em>(<strong>Inj</strong>ector)</em></p></li>
+<li><strong>MAF</strong>: <em>(<strong>M</strong>ass <strong>A</strong>ir <strong>F</strong>low)</em>
+
+<ul>
+<li>This is an alternative to the MAP sensor that is unsupported at this time, however the circuit is cheap and can be used as a general purpose analog input also. There is a pad to connect supporting circuitry to for this input (labeled <strong>MAF Sensor</strong>) or you might be able to use the MAT sensor input instead. Check the <a href="http://forum.diyefi.org/viewforum.php?f=67">Jaguar</a> forum for more details.</li>
+</ul></li>
+<li><strong>MAT</strong>: <em>(<strong>M</strong>anifold <strong>A</strong>ir <strong>T</strong>emperature)</em>
+
+<ul>
+<li>Sensor used to measure the air temperature inside the intake manifold.</li>
+</ul></li>
+<li><strong>MAP</strong>: <em>(<strong>M</strong>anifold <strong>A</strong>bsolute <strong>P</strong>ressure)</em>
+
+<ul>
+<li>The BOM is tailored to a normally aspirated vehicle with the preferred sensor (MPX4100AP) and provides sufficient accuracy for all naturally aspirated vehicles. If you are going to use the Jaguar board on a boosted vehicle then you should use a MPX4250AP which has sufficient range to cover boosted applications up to 21psi. If you are planning boost levels in excess of or close to 21psi, from a relatively large turbo, there are other options that you need to investigate.</li>
+</ul></li>
+<li><strong>O2</strong>: <em>(<strong>O</strong>xygen)</em>
+
+<ul>
+<li>Only linear wide-band lambda sensors are supported at this time by the freeems-vanilla firmware.</li>
+</ul></li>
+<li><p><strong>RPM</strong>: <em>(<strong>R</strong>evolutions <strong>P</strong>er <strong>M</strong>inute)</em></p></li>
+<li><p><strong>TPS</strong>: <em>(<strong>T</strong>hrottle <strong>P</strong>osition <strong>S</strong>ensor)</em></p></li>
+<li><p><strong>USB</strong>: <em>(<strong>U</strong>niversal <strong>S</strong>erial <strong>B</strong>us)</em></p></li>
+</ul>
+
+<h3>BOM Configuration Overview</h3>
+
+<p><em>Git users download the <a href="https://github.com/DeuceEFI/Jaguar/blob/0.7-alpha/docs/Jaguar-0.7-alpha.ods">BOM here</a>.</em></p>
+
+<p><hr id="sourcing_components"></p>
+
+<h2>Sourcing the components</h2>
+
+<h4>If you ordered a Jaguar kit from Andy:</h4>
+
+<p>All of the components found in the BOM have been included in the kit, you do not need any additional components.</p>
+
+<h4>Digi-Key:</h4>
+
+<p>The BOM with Digi-Key part numbers has been the only BOM developed for the Jaguar board at this time.</p>
+
+<h4>Newark, Mouser or Element14:</h4>
+
+<p>Unfortunately Newark, Mouser or Element14 BOM equivalents have not yet been developed for the Jaguar board, if you find the equivalent part numbers from one of these suppliers, let me know and I will include it in the Jaguar repository.</p>
+
+<p>Just copy and paste the supplier part numbers for required components to the relevant suppliers shopping cart.</p>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="overview.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="general_info.html">Next &gt;&gt;</a> </p></body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaguar version 0.6-alpha for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_SMD.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_PowerSupplies.html">Next &gt;&gt;</a> </p>
+
+<p><hr id="pcb_bake"></p>
+
+<h1>Baking the Assembled PCB</h1>
+
+<p><em>BAKING DETAILS</em>
+- Place the completed board(s) in your reflow soldering oven and start the reflow cycle.
+- Once the cycle is complete and the board(s) have cooled, remove them from the reflow oven for inspection.</p>
+
+<h4>AFTER BAKING INSPECTION</h4>
+
+<ul>
+<li>Check the entire PCB for Solder bridges, especially on <strong>MCU (U1), U7, U4 and all the Qs</strong></li>
+<li>Examine the new solder joints for dryness, this is normally depicted by dull looking solder, it all should be rather shinny.</li>
+<li>Clear any solder beads that may have formed on the PCB, this can easily be performed by using a tooth brush and giving the PCB a quick and careful scrub.</li>
+</ul>
+
+<h4>AFTER BAKING TESTING</h4>
+
+<p><strong>Testing MCU for solder bridges</strong></p>
+
+<ul>
+<li>Set your DMM for measuring resistance 200 ohm range should be OK;
+
+<ul>
+<li>Check from one MCU (U1) pin to the next to make sure they are not shorted together.
+
+<ul>
+<li>There is one exception, only MCU (U1) pins 85 and 86 should show shorted.</li>
+</ul></li>
+<li>Check from one USB UART (U7) pin to the next to make sure they are not shorted together.
+
+<ul>
+<li>There is one exception, only USB UART (U7) pins 25 and 26 should show shorted.</li>
+</ul></li>
+<li>Check from one MAX9926 (U4) pin to the next to make sure they are not shorted together.
+
+<ul>
+<li>There is no exception.</li>
+</ul></li>
+<li>Check from one VNN7NV0413TR (Q9-11) pin to the others to make sure they are not shorted together.
+
+<ul>
+<li>Also make sure that no pin is shorted to ground.</li>
+</ul></li>
+<li>Check from one VND7NV04 (Q1-8) pin to the others to make sure they are not shorted together.
+
+<ul>
+<li>Also make sure that no pin is shorted to ground.</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_SMD.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <a class="next_page_link" href="assembly_PowerSupplies.html">Next &gt;&gt;</a> </p></body>
+</html>

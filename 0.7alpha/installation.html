@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jaguar version 0.6-alpha for FreeEMS Assembly Manual</title>
+<meta charset="utf-8">
+<style></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_complete.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <span class="next_page_link">Next &gt;&gt;</span> </p>
+
+<p><hr id="installation_overview"></p>
+
+<h1>Installation</h1>
+
+<p>Follow these instructions to connect the Jaguar Revision A3 board to your engine.</p>
+
+<p><hr id="installation_inputs"></p>
+
+<h2>Inputs</h2>
+
+<h3>Connect the following <strong>ground</strong> connections to the engine block:</h3>
+
+<ul>
+<li><strong>GND</strong> Located in the lower right of the board near C19. This is used for the primary battery ground and should be connected directly to the negative battery terminal.</li>
+<li><strong>GND2</strong> Located in the upper right of the board near C12. This is used for the secondary battery ground and should be connected directly to the negative battery terminal.</li>
+<li><strong>INJ-GND</strong> Located in the upper left of the board near R41. This is used for the injector MOSFETs as their primary isolated ground connection. It should be connected to the engine block.</li>
+<li><strong>INJ-GND2</strong> Located in the upper left of the board near R44. This is used for the injector MOSFETs as their secondary isolated ground connection. It should be connected to the engine block.</li>
+<li><strong>OUT-GND</strong> Located in the upper left of the board near R46. This is used for the output MOSFETs as their isolated ground connection. It should be connected to the engine block.</li>
+</ul>
+
+<h3>Connect the following <strong>ground</strong> connections to the engine sensors:</h3>
+
+<ul>
+<li><strong>Sensor-GND</strong> Located in the upper right of the board near JP6. This is used for the TPS sender ground connection and should be connected directly to the TPS sensor.</li>
+<li><strong>Sensor-GND</strong> Located in the upper right of the board near C38. This is used for the primary analog sensor signal ground and should be connected to the engine block.</li>
+<li><strong>Sensor-GND</strong> Located in the upper right of the board near C35. This is used for the secondary analog sensor signal ground and should be connected to the engine block.</li>
+</ul>
+
+<h3>Connect the following <strong>Switched 12v</strong> connections to the Jaguar board:</h3>
+
+<ul>
+<li><strong>12v-SW</strong> Located in the right edge of the board near D44.</li>
+<li><strong>12v-SW2</strong> Located in the lower left of the board near D18.</li>
+<li><strong>BRV-12v</strong> Located in the top center of the board near R29.</li>
+<li><strong>FAN-12v</strong> Located in the top left section of the board near R72.</li>
+<li><strong>FUEL-12v</strong> Located in the top left section of the board near R53.</li>
+<li><strong>ACC-12v</strong> Located in the top left section of the board near R53.</li>
+</ul>
+
+<p><strong>NOTE:</strong> 12v-SW, 12v-SW2, FAN-12v, FUEL-12v and ACC-12v can be connected to the same source or you may wish to connect 12v-SW and 12v-SW2 to one source and FAN-12v, FUEL-12v and ACC-12v to a separate source, they are only used to illuminate the LEDs for these outputs.</p>
+
+<p>BRV-12v should be connected separately through a relay back to the battery to measure the voltage at the battery only when the key is on.</p>
+
+<h3>Connect the following analog sensor connections to the Jaguar board:</h3>
+
+<ul>
+<li><strong>IAT</strong> Located in the upper middle section of the board near R27. This should be connected to the <strong>TAN</strong> wire on most GM vehicles.</li>
+<li><strong>MAF</strong> Located in the upper middle section of the board near C28.</li>
+<li><strong>CHT</strong> Located in the upper middle section of the board near R31. This should be connected to the <strong>YELLOW</strong> wire on the Coolant Temperature Sensor on most GM vehicles.</li>
+<li><strong>O2</strong> Located in the upper right section of the board near R33. This should be connected to the analog linear output of your wideband O2 lamda sensor.</li>
+<li><strong>TPS</strong> Located in the upper right section of the board near R34. This should be connected to the <strong>DARK BLUE</strong> wire on the TPS sender on most GM vehicles.</li>
+<li><strong>TPS-5v</strong> Located in the top center of the board near D14. This should be connected to the <strong>GREY</strong> wire going to the TPS sender on most GM vehicles.</li>
+</ul>
+
+<h2>RPM/Position Sensors</h2>
+
+<h3>Connect the following RPM/Position sensor connections to the Jaguar board:</h3>
+
+<ul>
+<li><p><strong>CAM+</strong> Located in the bottom right section of the board near R20. This should be connected to the <strong>BLACK</strong> wire on most GM vehicles that use a Hall Effect sensor. If you are using a VR input connect the Camshaft <strong>+</strong> VR input here.</p></li>
+<li><p><strong>CAM-</strong> Located in the bottom right section of the board near R20. This should be connected to one of the ground or shield pads for GM vehicles that use Hall Effect, optical or digital sensor Camshaft position sensors.</p></li>
+<li><p><strong>CAM-Shield</strong> Located in the bottom right section of the board near R57. This should be connected to the shield of the wiring for the Camshaft input sensor.</p></li>
+<li><p><strong>CRANK+</strong> Located in the bottom right section of the board near R23. This should be connected to the <strong>BLACK</strong> wire on most GM vehicles that use a Hall Effect sensor. If you are using a VR input connect the Crankshaft <strong>+</strong> VR input here.</p></li>
+<li><p><strong>CRANK-</strong> Located in the bottom right section of the board near R19. This should be connected to one of the ground or shield pads for GM vehicles that use Hall Effect, optical sensors or digital sensor Crankshaft position sensors.</p></li>
+<li><p><strong>Crank-Shield</strong> Located in the bottom right section of the board near R12. This should be connected to the shield of the wiring for the Crankshaft input sensor.</p></li>
+</ul>
+
+<p><strong>Verify all the analog sensor inputs are functioning properly by opening EMStudio or MegaTunix and observing the analog sensor input values.</strong></p>
+
+<p><hr id="installation_outputs"></p>
+
+<h1>Outputs</h1>
+
+<h2>GM DIS/HEI Ignition System</h2>
+
+<h3>JP1 and JP2 settings:</h3>
+
+<ul>
+<li><strong>JP1</strong> Install jumper so that the middle pin and the pin closest to R35 is jumpered together (ie: grounded)</li>
+<li><strong>JP2</strong> Install jumper so that the middle pin and the pin closest to the end of the PCB is jumpered together (ie: grounded)</li>
+</ul>
+
+<h3>Connect the following ignition system connections to the Jaguar board:</h3>
+
+<ul>
+<li><strong>DIS-Bypass</strong> Located in the lower left section of the board near R65. This should be connected to the <strong>TAN/BLACK</strong> wire on most GM DIS or HEI modules.</li>
+<li><strong>IGN-Advance</strong> Located in the lower left section of the board near R15. This should be connected to the <strong>WHITE</strong> (EST) wire on most GM DIS or HEI modules.</li>
+</ul>
+
+<h2>Fuel, Fan and Accessory Outputs</h2>
+
+<h3>Fuel Pump Low Side Driver</h3>
+
+<p>This is the only Low Side Driver that is connected to an MCU output.</p>
+
+<ul>
+<li><strong>Fuel-</strong> Located in the upper left section of the board between C29 and D30. This should be connected to the <strong>GREEN/WHITE</strong> wire that controls the Fuel Pump Relay on most GM vehicles.</li>
+</ul>
+
+<h3>Fan Low Side Driver</h3>
+
+<p>This Low Side Driver is NOT connected to an MCU output.</p>
+
+<ul>
+<li><strong>FAN-</strong> Located in the upper left section of the board between R73 and R74. This should be connected to the negative wire that controls the radiator cooling Fan Relay. This can also be used to supply a pulse width modulated input to a variable speed fan controller that you supply external to the Jaguar board. See the <a href="http://forum.diyefi.org/viewforum.php?f=67">Jaguar</a> forum for more details.</li>
+</ul>
+
+<h3>Accessory Low Side Driver</h3>
+
+<p>This Low Side Driver is NOT connected to an MCU output.</p>
+
+<ul>
+<li><strong>ACC-</strong> Located in the upper left section of the board between D42 and R76. This should be connected to the negative wire that controls an Accessory Relay, if needed for your application.</li>
+</ul>
+
+<p>An example would be: I am using the <strong>ACC-</strong> output to drive a relay that controls the Torque Convertor Clutch (TCC) (<strong>TAN/BLACK</strong> wire) on my GM Turbo-Hydro 700R4 transmission. See the <a href="http://forum.diyefi.org/viewforum.php?f=67">Jaguar</a> forum for more details.</p>
+
+<p><hr id="installation_injectors"></p>
+
+<h2>Injector Outputs</h2>
+
+<h3>For 4 cylinder engine sequential injection</h3>
+
+<h4>Configure MCU Outputs to Injector MOSFET inputs</h4>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/mcu_outputs.png"><img src="img/mcu_outputs.png" width=337 height=260 title="MCU Outputs to Injection inputs" alt="MCU Outputs to Injection inputs">
+<div class=pict_title>MCU Outputs to Injection inputs
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li>Jumper from (Port T4) P20 pin 1 to P34 Pin 1</li>
+<li>Jumper from (Port T5) P20 pin 2 to P34 Pin 2</li>
+<li>Jumper from (Port T6) P20 pin 3 to P34 Pin 3</li>
+<li>Jumper from (Port T7) P20 pin 4 to P34 Pin 4</li>
+</ul>
+
+<h4>Connect Injectors to Injector MOSFETs</h4>
+
+<div class=imagebox style="min-height:592px">
+<a class=pict href="img/p26.png"><img src="img/p26.png" width=312 height=572 title="4 cylinder sequential injection" alt="4 cylinder sequential injection">
+<div class=pict_title>4 cylinder sequential injection
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<p>The injector numbers listed below are the actual firing order, for example, if your engine firing order is 1-3-4-2 you would connect:</p>
+
+<ul>
+<li>the injector for cylinder #1 to P26 pin 1 (injector #1)</li>
+<li>the injector for cylinder #3 to P26 pin 2 (injector #2)</li>
+<li>the injector for cylinder #4 to P26 pin 3 (injector #3)</li>
+<li>the injector for cylinder #2 to P26 pin 4 (injector #4)</li>
+</ul>
+
+<h3>For 6 cylinder engine semi-sequential injection</h3>
+
+<h4>Configure MCU Outputs to Injector MOSFET inputs</h4>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/mcu_outputs.png"><img src="img/mcu_outputs.png" width=337 height=260 title="MCU Outputs to Injection inputs" alt="MCU Outputs to Injection inputs">
+<div class=pict_title>MCU Outputs to Injection inputs
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li>Jumper from (Port T4) P20 pin 1 to P21 Pin 1</li>
+<li>Jumper from (Port T5) P20 pin 2 to P21 Pin 2</li>
+<li>Jumper from (Port T6) P20 pin 3 to P21 Pin 3</li>
+</ul>
+
+<h4>Configure MCU Outputs to Injector MOSFETs</h4>
+
+<div class=imagebox style="min-height:596px">
+<a class=pict href="img/injector_jumpers.png"><img src="img/injector_jumpers.png" width=248 height=576 title="6 cylinder injection inputs" alt="6 cylinder injection inputs">
+<div class=pict_title>6 cylinder injection inputs
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li>Jumper from P34 pin 1 to P34 Pin 2 --This allows Q1 and Q2 to be driven by Port T4</li>
+<li>Jumper from P34 pin 3 to P34 Pin 4 --This allows Q3 and Q4 to be driven by Port T5</li>
+<li>Jumper from P34 pin 5 to P34 Pin 6 --This allows Q5 and Q6 to be driven by Port T6</li>
+</ul>
+
+<h4>Connect Injectors to Injector MOSFETs</h4>
+
+<div class=imagebox style="min-height:592px">
+<a class=pict href="img/p26.png"><img src="img/p26.png" width=312 height=572 title="6 cylinder injection" alt="6 cylinder injection">
+<div class=pict_title>6 cylinder injection
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<p>The injector numbers listed below are the actual firing order, for example, if your engine firing order is 1-6-5-4-3-2 you would connect:</p>
+
+<ul>
+<li>the injector for cylinder #1 to P26 pin 1 (injector #1)</li>
+<li>the injector for cylinder #6 to P26 pin 2 (injector #2)</li>
+<li>the injector for cylinder #5 to P26 pin 3 (injector #3)</li>
+<li>the injector for cylinder #4 to P26 pin 4 (injector #4)</li>
+<li>the injector for cylinder #3 to P26 pin 5 (injector #5)</li>
+<li>the injector for cylinder #2 to P26 pin 6 (injector #6)</li>
+</ul>
+
+<h3>For 8 cylinder engine semi-sequential injection</h3>
+
+<h4>Configure MCU Outputs to Injector MOSFET inputs</h4>
+
+<div class=imagebox style="min-height:280px">
+<a class=pict href="img/mcu_outputs.png"><img src="img/mcu_outputs.png" width=337 height=260 title="MCU Outputs to Injection inputs" alt="MCU Outputs to Injection inputs">
+<div class=pict_title>MCU Outputs to Injection inputs
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li>Jumper from (Port T4) P20 pin 1 to P34 Pin 1</li>
+<li>Jumper from (Port T5) P20 pin 2 to P34 Pin 2</li>
+<li>Jumper from (Port T6) P20 pin 3 to P34 Pin 3</li>
+<li>Jumper from (Port T7) P20 pin 4 to P34 Pin 4</li>
+</ul>
+
+<h4>Configure MCU Outputs to Injector MOSFETs</h4>
+
+<div class=imagebox style="min-height:596px">
+<a class=pict href="img/injector_jumpers.png"><img src="img/injector_jumpers.png" width=248 height=576 title="8 cylinder injection inputs" alt="8 cylinder injection inputs">
+<div class=pict_title>8 cylinder injection inputs
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<ul>
+<li>Jumper from P34 pin 1 to P34 Pin 2 --This allows Q1 and Q2 to be driven by Port T4</li>
+<li>Jumper from P34 pin 3 to P34 Pin 4 --This allows Q3 and Q4 to be driven by Port T5</li>
+<li>Jumper from P34 pin 5 to P34 Pin 6 --This allows Q5 and Q6 to be driven by Port T6</li>
+<li>Jumper from P34 pin 7 to P34 Pin 8 --This allows Q7 and Q8 to be driven by Port T7</li>
+</ul>
+
+<h4>Connect Injectors to Injector MOSFETs</h4>
+
+<div class=imagebox style="min-height:592px">
+<a class=pict href="img/p26.png"><img src="img/p26.png" width=312 height=572 title="8 cylinder injection" alt="8 cylinder injection">
+<div class=pict_title>8 cylinder injection
+</div>
+
+<p></a></p>
+
+<p></div></p>
+
+<p>The injector numbers listed below are the actual firing order, for example, if your engine firing order is 1-8-4-3-6-5-7-2 you would connect:</p>
+
+<ul>
+<li>the injector for cylinder #1 to P26 pin 1 (injector #1)</li>
+<li>the injector for cylinder #8 to P26 pin 2 (injector #2)</li>
+<li>the injector for cylinder #4 to P26 pin 3 (injector #3)</li>
+<li>the injector for cylinder #3 to P26 pin 4 (injector #4)</li>
+<li>the injector for cylinder #6 to P26 pin 5 (injector #5)</li>
+<li>the injector for cylinder #5 to P26 pin 6 (injector #6)</li>
+<li>the injector for cylinder #7 to P26 pin 5 (injector #7)</li>
+<li>the injector for cylinder #2 to P26 pin 6 (injector #8)</li>
+</ul>
+
+<p>**To configure your freshly installed FreeEMS-powered system, read this <a href="http://forum.diyefi.org/viewtopic.php?f=54&amp;t=1166">thread</a> and all of the linked threads.</p>
+
+<p><hr id="links"></p>
+
+<p><hr id="prev_next"></p>
+
+<p><a class="prev_page_link" href="assembly_complete.html">&lt;&lt; Previous</a> || <a href="index.html#index">Index</a> || <span class="next_page_link">Next &gt;&gt;</span> </p></body>
+</html>
